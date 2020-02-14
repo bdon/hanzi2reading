@@ -35,4 +35,5 @@ Total = 15 bits per syllable. This is less compact than enumerating all standard
 * https://github.com/tsroten/dragonmapper (data is in large CSV files, Python only)
 * https://github.com/g0v/moedict-data
 * https://cc-cedict.org/editor/editor.php
+* https://chrome.google.com/webstore/detail/zhongwen-chinese-english/kkmlkkjojmombglmlpbpapmhcaljjkde
 
