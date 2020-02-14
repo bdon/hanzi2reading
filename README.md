@@ -1,7 +1,7 @@
 # hanzi2reading
 
 ## Design goals
-* Annotation of Chinese characters with Standard Mandarin (國語/普通話）readings, script-agnostic
+* Annotation of Chinese characters with Standard Mandarin (國語/普通話) readings, script-agnostic
 * Should work offline, and database format should be as compact as possible - e.g. Protocol Buffers loaded by WebAssembly
 * Should support word-based disambiguation of characters with multiple readings
 * separation of code and data - dictionary backend should be swappable
@@ -12,14 +12,16 @@
 
 ## Database Format
 
-https://en.wikipedia.org/wiki/Zhuyin_table
-https://en.wikipedia.org/wiki/Pinyin_table
+* https://en.wikipedia.org/wiki/Zhuyin_table
+* https://en.wikipedia.org/wiki/Pinyin_table
 
-Initial = 5 bits
-Medial = 2 bits
-Final = 4 bits
-Erhua = 1 bit
-Tone = 3 bits
+Part | Bits
+--- | ---
+Initial | 5
+Medial | 2
+Final | 4
+Erhua | 1
+Tone | 3
 
 Total = 15 bits per syllable. This is less compact than enumerating all standard syllables, but allows dictionaries to have non-standard syllables.
 
