@@ -1,7 +1,8 @@
 # hanzi2reading
 
 ## Design goals
-* Annotation of Chinese characters with Standard Mandarin (國語/普通話) readings, script-agnostic
+* Annotation of Chinese characters with Standard Mandarin (國語/普通話) readings
+* Agnostic to simplified/traditional script and transliteration method
 * Should work offline, and database format should be as compact as possible - e.g. Protocol Buffers loaded by WebAssembly
 * Should support word-based disambiguation of characters with multiple readings
 * separation of code and data - dictionary backend should be swappable
