@@ -20,8 +20,8 @@ Part | Bits
 Initial | 5
 Medial | 2
 Final | 4
-Erhua | 1
 Tone | 3
+Erhua | 1
 
 Total = 15 bits per syllable. This is less compact than enumerating all standard syllables, but allows dictionaries to have non-standard syllables.
 
