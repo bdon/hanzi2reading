@@ -18,8 +18,10 @@ fn main() {
     let entries: Vec<Entry> = serde_json::from_str(&contents).expect("file should be proper JSON");
 
     for entry in &entries {
-        if entry.title.chars().count() == 1 && entry.heteronyms.len() == 1 {
-            println!("{} {}",entry.title, entry.heteronyms.len());
+        for heteronym in &entry.heteronyms {
+            if !heteronym["bopomofo"].is_null() {
+                println!("{} {}",entry.title,heteronym["bopomofo"].as_str().unwrap());
+            }
         }
     }
 }
