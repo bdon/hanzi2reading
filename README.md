@@ -10,6 +10,20 @@
 * Word segmentation is a non-goal.
 * Target should be good performance for non-sentence inputs, without needing part-of-speech classification, e.g. 得
 
+## Database Format
+
+https://en.wikipedia.org/wiki/Zhuyin_table
+https://en.wikipedia.org/wiki/Pinyin_table
+
+Initial = 5 bits
+Medial = 2 bits
+Final = 4 bits
+Erhua = 1 bit
+Tone = 3 bits
+
+Total = 15 bits per syllable. This is less compact than enumerating all standard syllables, but allows dictionaries to have non-standard syllables.
+
+
 ## Notes
 * https://www.unicode.org/reports/tr38/#N1019C
 * https://languagelog.ldc.upenn.edu/nll/?p=45843
