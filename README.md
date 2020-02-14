@@ -15,3 +15,4 @@
 * https://github.com/mozillazg/python-pinyin (SC only, data embedded in code)
 * https://github.com/g0v/moedict-data
 * https://cc-cedict.org/editor/editor.php
+* https://github.com/tsroten/dragonmapper
