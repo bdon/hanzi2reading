@@ -28,6 +28,9 @@ class Trie:
             candidate = ''
             candidate_depth = 0
             depth = 0
+            if s[j] not in node.children:
+                i = i + 1
+                continue
             while j < len(s) and s[j] in node.children:
                 node = node.children[s[j]]
                 depth = depth + 1

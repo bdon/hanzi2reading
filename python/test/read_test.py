@@ -1,5 +1,5 @@
 import unittest
-from trie import Trie
+from hanzi2reading import Trie
 
 class TestTrie(unittest.TestCase):
 
@@ -36,6 +36,11 @@ class TestTrie(unittest.TestCase):
         t = Trie()
         t.add('a','ab')
         self.assertEqual(t.get('aaa'),'ababab')
+
+    def test_nomatch(self):
+        t = Trie()
+        t.add('a','ab')
+        self.assertEqual(t.get('x'),'')
 
 if __name__ == '__main__':
     unittest.main()
