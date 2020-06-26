@@ -14,7 +14,10 @@ RE = re.compile(u'^[⺀-⺙⺛-⻳⼀-⿕々〇〡-〩〸-〺〻㐀-䶵一-鿃�
 
 entries = []
 chars = {}
+aliases = {}
 
+key = 'pinyin'
+separator = ' ' # '\u3000'
 
 with open('../moedict-data/dict-revised.json','r') as f:
   for entry in json.loads(f.read()):
@@ -22,16 +25,23 @@ with open('../moedict-data/dict-revised.json','r') as f:
     if not RE.match(title):
         continue
 
-    entries_with_bpmf = [x for x in entry['heteronyms'] if 'bopomofo' in x]
-    if 'bopomofo' not in entry['heteronyms'][0]:
-        print(entry['heteronyms'][0])
+    entries_with_bpmf = [x for x in entry['heteronyms'] if key in x]
+    if key not in entry['heteronyms'][0]:
+        # in moedict, 台 -> 臺 without a bopomofo key
+        m = re.match('「(.)」',entry['heteronyms'][0]['definitions'][0]['def'])
+        if m:
+            aliases[title] = m.groups(1)[0]
     if len(entries_with_bpmf) == 0:
         continue
     heteronym_1 = entries_with_bpmf[0]
 
-    entries.append((title, heteronym_1['bopomofo']))
+    entries.append((title, heteronym_1[key]))
     if len(title) == 1:
-        chars[title] = heteronym_1['bopomofo']
+        chars[title] = heteronym_1[key]
+
+for char, alias in aliases.items():
+    entries.append((char,chars[alias]))
+
 
 
 print(f"Dictionary entries: {len(entries)}")
@@ -43,7 +53,7 @@ for entry in entries:
     if len(entry[0]) == 1:
         reduced.append(entry)
     else:
-        parts = entry[1].split("\u3000")
+        parts = entry[1].split(separator)
         if [chars.get(c,'?') for c in entry[0]] == parts: # 櫈
             redundant = redundant + 1
         else:
@@ -53,6 +63,6 @@ print(f"Eliminated entries: {redundant}")
 print(f"Final entries: {len(reduced)}")
 with open(sys.argv[1],'w') as f:
     for entry in reduced:
-        f.write("{0},{1}\n".format(entry[0],entry[1].replace("\u3000",'')))
+        f.write("{0},{1}\n".format(entry[0],entry[1].replace(separator,'')))
 
 
