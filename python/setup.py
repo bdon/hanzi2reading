@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hanzi2reading",
-    version="0.0.2",
+    version="0.0.3",
     author="Brandon Liu",
     author_email="bdon@bdon.org",
     description="Convert Mandarin text to Hanyu Pinyin, Zhuyin, and more, using swappable dictionary backends.",
