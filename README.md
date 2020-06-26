@@ -1,5 +1,9 @@
 # hanzi2reading
 
+## 
+
+This library is distributed with a default database; you can find the license information here. https://github.com/g0v/moedict-data/blob/master/README.md
+
 ## Design goals
 * Annotation of Chinese characters with Standard Mandarin (國語/普通話) readings
 * Agnostic to simplified/traditional script and transliteration method
