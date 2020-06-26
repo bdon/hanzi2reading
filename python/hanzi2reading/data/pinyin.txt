@@ -396,7 +396,6 @@
 下得去,xiàdeqù
 下板兒,xiàbǎnr(變)xiàbǎr
 下梆子,xiàbāngzi
-下椗,xiàdìng
 下死勁,xiàsǐjìn
 下死的,xiàsǐde
 下溜頭,xiàliūtou
@@ -436,7 +435,6 @@
 不值得,bùzhíde
 不假外出,bùjiàwàichū
 不停當,bùtíngdàng
-不偢不倸,bùchǒubùcǎi
 不入調,bùrùdiào
 不分主從,bùfēnzhǔzòng
 不分皁白,bùfēnzàobái
@@ -1346,7 +1344,6 @@
 以己度人,yǐjǐduòrén
 以珠彈雀,yǐzhūtánquè
 以白為黑,yǐbáiwéihēi
-以肉餧虎,yǐròuwèihǔ
 以莛撞鐘,yǐtíngzhuàngzhōng
 以蠡測海,yǐlícèhǎi
 以血償血,yǐxuèchángxuè
@@ -1360,7 +1357,6 @@
 仲,zhòng
 仲父,zhòngfǔ
 仳,pǐ
-仳倠,pǐhuī
 仵,wǔ
 仵作行人,wǔzuòhángrén
 件,jiàn
@@ -1627,7 +1623,6 @@
 佷,hěn
 佸,huó
 佹,guǐ
-佹僪,guǐjué
 佺,quán
 佻,tiáo
 佻㒓,tiāotà
@@ -1803,11 +1798,13 @@
 保,bǎo
 保住,bǎozhu
 保保,bǎobao
+保俶塔,bǎochùtǎ
 保兒,bǎor
 保全處分,bǎoquánchǔfèn
 保安處分,bǎoānchǔfèn
 保家的,bǎojiāde
 保綠基金會,bǎolǜjījīnhuì
+保護妳專線,bǎohùnǐzhuānxiàn
 保長,bǎozhǎng
 俞,yú
 俞兒,shūér
@@ -1836,6 +1833,9 @@
 俴,jiàn
 俵,biǎo
 俶,chù
+俶擾,chùrǎo
+俶爾,chùěr
+俶裝,chùzhuāng
 俸,fèng
 俺,ǎn
 俺們,ǎnmen
@@ -2037,7 +2037,6 @@
 倡條,chāngtiáo
 倡條冶葉,chāngtiáoyěyè
 倢,jié
-倢伃,jiéyú
 倣,fǎng
 倥,kōng
 倥傯,kǒngzǒng
@@ -2145,7 +2144,6 @@
 偭,miǎn
 偯,yǐ
 偰,xiè
-偰列箎,xièlièchí
 偲,sī
 側,cè
 側撞防護系統,cèzhuàngfánghùxìtǒng
@@ -2181,7 +2179,6 @@
 傅說,fùyuè
 傅說版築,fùyuèbǎnzhú
 傈,lì
-傈僳族,lìsùzú
 傉,nù
 傌,mà
 傍,bàng
@@ -2396,7 +2393,6 @@
 儳,chàn
 儴,ráng
 儵,shù
-儵怳,shùhuǎng
 儷,lì
 儸,luó
 儹,zǎn
@@ -2608,6 +2604,7 @@
 八竿子打不著,bāgānzidǎbùzháo
 八答鞋,bādāxié
 八答麻鞋,bādāmáxié
+八蜡,bāzhà
 八行,bāháng
 八行書,bāhángshū
 八輩兒五沒根基,bā　bèir　wǔ　méi　gēn　jī　(變)bá　bèr　wǔ　méi　gēn　jī
@@ -2670,7 +2667,6 @@
 公轉,gōngzhuàn
 公道伯,gōngdaobó
 公道話,gōngdaohuà
-公鐓,gōngdūn
 公雞給黃鼠狼拜年,gōngjīgěihuángshǔlángbàinián
 公頃,gōngqǐng
 六,liù
@@ -2797,7 +2793,6 @@
 冬麥,dōngmài
 冰,bīng
 冰人兒,bīng　rénr　(變)bīng　rér
-冰檗,bīngbò
 冰櫱,bīngbò
 冰爪,bīngzhuǎ
 冰碴兒,bīngchár
@@ -2850,11 +2845,6 @@
 凝血現象,níngxiěxiànxiàng
 凝血障礙,níngxiězhàngài
 几,（讀音）jǐ
-几几,jǐjǐ
-几席,jǐxí
-几杖,jǐzhàng
-几案,jǐàn
-几筵,jǐyán
 凡,fán
 凡百,fánbǎi
 凡知,fánzhì
@@ -3161,7 +3151,6 @@
 剎車,shāchē
 剒,cuò
 剔,tī
-剔團圞,tītuánluán
 剔子,tīzi
 剕,fèi
 剖,pǒu
@@ -3284,7 +3273,6 @@
 劉白墮,liúbáiduò
 劉知幾,liúzhījī
 劉長卿,liúzhǎngqīng
-劉阮上天台,liúruǎnshàngtiāntái
 劊,kuài
 劊子手,kuàizishǒu
 劌,guì
@@ -4005,7 +3993,6 @@
 厚誣,hòuwū
 厚黑學,hòuhēixué
 厜,chuí
-厜㕒,chuíwéi
 厝,cuò
 厞,fèi
 原,yuán
@@ -4215,7 +4202,6 @@
 叱喝,chìhè
 史,shǐ
 史乘,shǐshèng
-史鰌,shǐqiū
 右,yòu
 右相,yòuxiàng
 右翼分子,yòuyìfènzǐ
@@ -4448,6 +4434,7 @@
 含量,hánliàng
 含飴弄孫,hányínòngsūn
 听,yǐn
+听听,yǐnyǐn
 吭,háng
 吭哧,kēngchī
 吭氣,kēngqì
@@ -4615,7 +4602,6 @@
 和弄,huònòng
 和樂,hélè
 和牌,húpái
-和珅,héshēn
 和稀泥,huòxīní
 和詩,hèshī
 和韻,hèyùn
@@ -4631,7 +4617,6 @@
 咕,gū
 咕叨,gūdāo
 咕咕唧唧,gūgūjījī
-咕咾肉,gūlǎoròu
 咕唧,gūji
 咕噥,gūnong
 咕嚕,gūlu
@@ -4892,7 +4877,6 @@
 唾面自乾,tuòmiànzìgān
 啀,yái
 啁,zhōu
-啁噍,zhōujiū
 啃,kěn
 啃骨頭,kěngútou
 啄,zhuó
@@ -4960,7 +4944,6 @@
 啪,pā
 啪啦,pāla
 啪嗒,pādā
-啪嚓,pācā
 啵,bō
 啶,dìng
 啷,lāng
@@ -5237,7 +5220,6 @@
 嘉言善行,jiāyánshànxìng
 嘉言懿行,jiāyányìxìng
 嘌,piāo
-嘌呤,piāolíng
 嘍,lóu
 嘍子,lóuzi
 嘎,gā
@@ -5292,6 +5274,8 @@
 嘟嚕嘴,dūluzuǐ
 嘧,mì
 嘩,huā
+嘩啦,huālā
+嘩啦啦,huālālā
 嘩喇喇,huālālā
 嘬,（讀音）chuài
 嘬嘬,chuàichuài
@@ -5348,6 +5332,8 @@
 噍,jiào
 噍吧哖事件,jiāobāniánshìjiàn
 噍殺,jiāoshài
+噍類,jiàolèi
+噍類無遺,jiàolèiwúyí
 噎,yē
 噏,xī
 噓,xū
@@ -5568,7 +5554,6 @@
 困難,kùnnan
 困騰騰,kùnténgténg　（又音）kùntēngtēng
 囷,jūn
-囷窌,jūnjiào
 囹,líng
 固,gù
 固定匯率,gùdìnghuìlǜ
@@ -5641,7 +5626,6 @@
 團,tuán
 團剝,tuánbō
 團團轉,tuántuánzhuàn
-團圞,tuánluán
 團弄,tuánnòng
 團著,tuánzhe
 團行,tuánháng
@@ -5652,7 +5636,6 @@
 圜,yuán
 圜鑿方枘,yuánzuòfāngruì
 土,tǔ
-土中曲蟮,tǔzhōngqūshàn
 土伯特,tǔbótè
 土作,tǔzuō
 土包子,tǔbāozi
@@ -5727,6 +5710,7 @@
 坎兒,kǎnr(變)kǎr
 坎兒井,kǎnrjǐng(變)kǎrjǐng
 坏,péi
+坏土,péitǔ
 坐,zuò
 坐不住,zuòbuzhù
 坐不穩,zuòbuwěn
@@ -6200,7 +6184,6 @@
 夢吐白鳳,mèngtǔbáifèng
 夢撒,mèngsà
 夢撒撩丁,mèngsàliáodīng
-夢蘭叶吉,mènglánxiéjí
 夤,yín
 夥,huǒ
 夥穿一條褲子,huǒchuānyītiáokùzi
@@ -6369,6 +6352,7 @@
 大蒜效應,dàsuànxiàoyìng
 大藏經,dàzàngjīng
 大處著眼,dàchùzhuóyǎn
+大蜡,dàzhà
 大蟲口裡倒涎,dàchóngkǒulǐdàoxián
 大行院,dàhángyuàn
 大補帖,dàbǔtiě
@@ -6426,11 +6410,6 @@
 天分,tiānfèn
 天南地北,tiānnándìběi
 天可汗,tiānkèhán
-天台,tiāntái
-天台女,tiāntáinǚ
-天台宗,tiāntáizōng
-天台山,tiāntáishān
-天台縣,tiāntáixiàn
 天塌了有地接著,tiāntāleyǒudìjiēzhe
 天官賜福,tiānguānsìfú
 天將,tiānjiàng
@@ -6706,7 +6685,6 @@
 好性子,hǎoxìngzi
 好惡,hàowù
 好意思,hǎoyìsi
-好愻,hǎosùn
 好戰,hàozhàn
 好戲還在後頭,hǎoxìháizàihòutóu
 好手好腳,hǎoshǒuhǎojiǎo
@@ -6754,7 +6732,6 @@
 如來藏,rúláizàng
 如切如磋,rúqiērúcuō
 如喪考妣,rúsàngkǎobǐ
-如壎如箎,rúxūnrúchí
 如履薄冰,rúlǚbóbīng
 如廁,rúcè
 如數家珍,rúshǔjiāzhēn
@@ -6951,13 +6928,13 @@
 婊子送客,biǎozisòngkè
 婐,ě
 婑,wǒ
+婑媠,wǒtuǒ
 婓,fēi
 婕,jié
 婗,ní
 婚,hūn
 婞,xìng
 婠,wān
-婠妠,wānnà
 婢,bì
 婥,chuò
 婦,fù
@@ -7079,7 +7056,6 @@
 嬌,jiāo
 嬌哥兒,jiāogēr
 嬌嫋不勝,jiāoniǎobùshēng
-嬌嬾,jiāolǎn
 嬌怯,jiāoquè
 嬌怯怯,jiāoquèquè
 嬖,bì
@@ -7504,7 +7480,6 @@
 寱,yì
 寵,chǒng
 寶,bǎo
-寶匳,bǎolián
 寶坻縣,bǎodǐxiàn
 寶應,bǎoyìng
 寶應縣,bǎoyìngxiàn
@@ -7672,6 +7647,7 @@
 小乘戒,xiǎoshèngjiè
 小人兒,xiǎo　rénr　(變)xiǎo　rér
 小人兒書,xiǎo　rénr　shū　(變)xiǎo　rér　shū
+小价,xiǎojiè
 小伙子,xiǎohuǒzi
 小便宜,xiǎopiányí
 小傳,xiǎozhuàn
@@ -7916,7 +7892,6 @@
 屍橫遍野,shīhéngbiànyě
 屎,shǐ
 屎盆子,shǐpénzi
-屎蚵蜋,shǐkēláng
 屏,píng
 屏居,bǐngjū
 屏息,bǐngxí
@@ -8532,7 +8507,6 @@
 幻想曲,huànxiǎngqǔ
 幻相,huànxiàng
 幼,yòu
-幼穉,yòuzhì
 幽,yōu
 幽咽,yōuyè
 幽殺,yōushài
@@ -8854,7 +8828,6 @@
 弱喪,ruòsàng
 弱怯怯,ruòquèquè
 張,zhāng
-張勳,zhāngxūn
 張掖縣,zhāngyìxiàn
 張脈,zhàngmài
 張角,zhāngjué
@@ -9041,7 +9014,6 @@
 彿,fú
 往,wǎng
 征,zhēng
-征彸,zhēngzhōng
 徂,cú
 待,dài
 待一會兒,dāi　yī　huǐr　(變)dāi　yì　huěr
@@ -9088,7 +9060,6 @@
 後邊,hòubian
 後頭,hòutou
 徐,xú
-徐穉置芻,xúzhìzhìchú
 徑,jìng
 徒,tú
 徒步當車,túbùdāngjū
@@ -9601,7 +9572,6 @@
 悴,cuì
 悴薄,cuìbó
 悵,chàng
-悵怳,chànghuǎng
 悶,mèn
 悶不作聲,mēnbùzuòshēng
 悶不吭聲,mēnbùkēngshēng
@@ -9661,7 +9631,6 @@
 惛懵,hūnméng
 惜,xí
 惝,chǎng
-惝怳,chǎnghuǎng
 惟,wéi
 惠,huì
 惠子知我,huìzǐzhīwǒ
@@ -10025,6 +9994,8 @@
 懍,lǐn
 懘,chì
 懞,méng
+懞懂,méngdǒng
+懞直,méngzhí
 懟,duì
 懠,qí
 懣,mèn
@@ -11078,6 +11049,7 @@
 括約肌,kuòyuējī
 拭,shì
 拮,jié
+拮据,jiéjū
 拯,zhěng
 拱,gǒng
 拱北,gǒngběi
@@ -11241,7 +11213,6 @@
 挨個兒,āigèr
 挨刀的,āidāode
 挨挨兒,āiair(變)āiar
-挨挨桚桚,āiāizázá
 挨棍子,āigùnzi
 挨肩兒,āijiānr(變)āijiār
 挨著,āizhe
@@ -12575,7 +12546,6 @@
 文書處理,wénshūchǔlǐ
 文武挑兒,wénwǔtiāor
 文武百官,wénwǔbǎiguān
-文滙閣,wénhuìgé
 文調,wéndiào
 文過,wènguò
 文過遂非,wènguòsuìfēi
@@ -12627,7 +12597,6 @@
 斨,qiāng
 斫,zhuó
 斫伐,zhuófá
-斫蜋,zhuóláng
 斫鱠,zhuókuì
 斬,zhǎn
 斬將奪旗,zhǎnjiàngduóqí
@@ -12641,7 +12610,6 @@
 新出土兒,xīnchūtǔr
 新出手兒,xīnchūshǒur
 新北市,xīnběishì
-新壠,xīnlǒng
 新娘子,xīnniángzi
 新娘車,xīnniángchē
 新媳婦兒,xīnxífùr
@@ -12673,7 +12641,6 @@
 方伯,fāngbó
 方便主子,fāngbiànzhǔzi
 方兒,fāngr
-方几,fāngjǐ
 方子,fāngzi
 方枘圜鑿,fāngruìyuánzuò
 方相,fāngxiàng
@@ -12692,7 +12659,6 @@
 施予,shīyǔ
 施施,yíyí
 施舍,shīshě
-施衿結褵,shījīnjiélí
 斿,yóu
 旁,páng
 旁午,bàngwǔ
@@ -12833,7 +12799,6 @@
 易,yì
 易傳,yìzhuàn
 易刑處分,yìxíngchǔfèn
-易學啓蒙,yìxuéqǐméng
 昔,xí
 昕,xīn
 昜,yáng
@@ -13099,7 +13064,6 @@
 曲肱之樂,qūgōngzhīlè
 曲肱而枕,qūgōngérzhèn
 曲薄,qūbó
-曲蟮,qūshàn
 曲裡拐彎,qūliguǎiwān
 曲話,qǔhuà
 曲調,qǔdiào
@@ -13983,7 +13947,6 @@
 桓,huán
 桔,jié
 桫,suō
-桫欏,suōluó
 桮,bēi
 桮杓,bēisháo
 桯,tīng
@@ -14096,7 +14059,6 @@
 棚匠,péngjiang
 棚圈,péngjuàn
 棚子,péngzi
-棚朳,péngbā
 棚車,péngchē
 棚鋪,péngpù
 棜,yù
@@ -14283,7 +14245,6 @@
 構,gòu
 槌,chuí
 槌子,chuízi
-槌骨濿髓,chuígǔlìsuǐ
 槍,qiāng
 槍把,qiāngbà
 槍桿子,qiānggǎnzi
@@ -14850,7 +14811,6 @@
 殷其靁,yǐnqíléi
 殷天動地,yǐntiāndòngdì
 殷天震地,yǐntiānzhèndì
-殷榘,yīnjǔ
 殷正,yīnzhēng
 殷殷屯屯,yīnyīnzhūnzhūn
 殷然,yānrán
@@ -15019,7 +14979,6 @@
 氄,rǒng
 氅,chǎng
 氅衣兒,chǎng　yīr　(變)chǎng　yer
-氆氌,pǔlū
 氈,zhān
 氈子,zhānzi
 氈襪裹腳靴,zhānwàguǒjiǎoxuē
@@ -15788,7 +15747,6 @@
 泌水樂飢,mìshuǐlèjī
 泐,lè
 泓,hóng
-泓汯,hónghóng
 泔,gān
 法,fǎ
 法堂疏,fǎtángshù
@@ -15903,7 +15861,6 @@
 洑,fú
 洒,cuǐ
 洒如,xiǎnrú
-洒家,sǎjiā
 洒淅,xiǎnxī
 洒濯,xǐzhuó
 洒然,xiǎnrán
@@ -16071,7 +16028,6 @@
 海葡萄,hǎipútao
 海量,hǎiliàng
 海難,hǎinàn
-海鰌,hǎiqiū
 海鶻,hǎihú
 海鹽,hǎiyán
 海鹽腔,hǎiyánqiāng
@@ -16177,7 +16133,6 @@
 淝,féi
 淞,sōng
 淟,tiǎn
-淟涊,tiǎnniǎn
 淠,pì
 淡,dàn
 淡忘,dànwàng
@@ -16373,7 +16328,6 @@
 湯著,tāngzháo
 湱,huò
 湲,yuán
-湳水,nǎnshuǐ
 溈,guī
 溉,gài
 溏,táng
@@ -16588,7 +16542,6 @@
 漏了眼,lòuleyǎn
 漏天兒,lòu　tiānr　(變)lòu　tiār
 漏子,lòuzi
-漏巵,lòuzhī
 漏春和尚,lòuchūnhéshang
 漏洞百出,lòudòngbǎichū
 漏風的巴掌,lòufēngdebāzhang
@@ -16679,7 +16632,6 @@
 潔白無瑕,jiébáiwúxiá
 潔身自好,jiéshēnzìhào
 潘,pān
-潘他唑新,pāntāzuòxīn
 潘安白髮,pānānbáifǎ
 潘岳白髮,pānyuèbáifǎ
 潘岳鬢白,pānyuèbìnbái
@@ -16709,7 +16661,6 @@
 潦草塞責,liáocǎosèzé
 潬,dàn
 潭,tán
-潭祉叶吉,tánzhǐxiéjí
 潮,cháo
 潮白,cháobái
 潯,xún
@@ -17106,9 +17057,10 @@
 焠,cuì
 無,wú
 無人銀行,wúrényínháng
+無价事,wújièshì
 無倒斷,wúdàoduàn
-無倽,wúshá
 無名帖,wúmíngtiě
+無噍類,wújiàolèi
 無回豁,wúhuíhuò
 無地自處,wúdìzìchǔ
 無奈我何,wúnàiwǒhé
@@ -17385,7 +17337,6 @@
 燕九節,yānjiǔjié
 燕京,yānjīng
 燕京歲時記,yānjīngsuìshíjì
-燕几,yànjǐ
 燕勞,yànlào
 燕太子丹,yāntàizǐdān
 燕姞夢蘭,yānjímènglán
@@ -17415,7 +17366,6 @@
 燕雀處屋,yànquèchǔwū
 燕雀豈知鴻鵠志,yànquèqǐzhīhónghúzhì
 燕雲十六州,yānyúnshíliùzhōu
-燕鴴,yànhéng
 燕麥,yànmài
 燕麥片,yànmàipiàn
 燖,xún
@@ -17460,7 +17410,6 @@
 爛了舌頭,lànleshétou
 爛攤子,làntānzi
 爛熟,lànshú
-爛熳,lànmàn
 爛爛兒的,lànlànrde(變)lànlārde
 爛糊,lànhu
 爛腸子,lànchángzi
@@ -17747,7 +17696,6 @@
 狻,suān
 狼,láng
 狼來了,lángláile
-狼吃幞頭,lángchīpútóu
 狼吞虎咽,lángtūnhǔyàn
 狼崽子,lángzǎizi
 狼心狗行,lángxīngǒuxìng
@@ -17845,7 +17793,6 @@
 獎,jiǎng
 獎掖,jiǎngyè
 獏,mú
-獏㺔,múhuī
 獐,zhāng
 獐子,zhāngzi
 獑,chán
@@ -17936,7 +17883,6 @@
 王朝,wángcháo
 王母娘娘,wángmǔniángniang
 王爺,wángye
-王襃,wángbāo
 王貢彈冠,wánggòngtánguān
 王賁,wángbēn
 王長,wàngzhǎng
@@ -18062,7 +18008,6 @@
 球拍,qiúpāi
 球蛋白,qiúdànbái
 琅,láng
-琅簡蘂書,lángjiǎnruǐshū
 琅邪,lángyé
 琅邪山,lángyéshān
 琅邪臺刻石,lángyétáikèshí
@@ -18080,7 +18025,6 @@
 琖,zhǎn
 琚,jū
 琛,chēn
-琛賮,chēnjìn
 琢,zhuó
 琤,chēng
 琥,hǔ
@@ -18737,7 +18681,6 @@
 發怔,fālèng
 發悶,fāmēn
 發憤忘食,fāfènwàngshí
-發摃,fāgàng
 發擺子,fābǎizi
 發擿,fātì
 發擿姦伏,fātìjiānfú
@@ -19730,7 +19673,6 @@
 的然,dírán
 的當,dídàng
 的的,dídí
-的皪,dìlì
 的知,dízhī
 的確,díquè
 的篤戲,dídǔxì
@@ -19924,7 +19866,6 @@
 盧家少婦,lújiāshàofù
 盧稜伽,lúlíngqié
 盩,zhōu
-盩厔縣,zhōuzhìxiàn
 盪,dàng
 盬,gǔ
 盭,lì
@@ -20397,7 +20338,6 @@
 石子,shízi
 石室金匱,shíshìjīnguì
 石擔,shídàn
-石敬瑭,shíjìngtáng
 石棉沉著病,shímiánchénzhuóbìng
 石獅子,shíshīzi
 石砫縣,shízhùxiàn
@@ -20530,7 +20470,6 @@
 碑帖,bēitiè
 碓,duì
 碔,wǔ
-碔砆,wǔfū
 碕,qí
 碗,wǎn
 碗子,wǎnzi
@@ -20653,6 +20592,7 @@
 磨而不磷,móérbùlìn
 磨舌頭,móshétou
 磨菇,mógu
+磨蝎,móhé
 磨豆腐,mòdòufu
 磨趄子,móqièzi
 磨難,mónàn
@@ -20685,6 +20625,7 @@
 礦,kuàng
 礦鹽,kuàngyán
 礧,lěi
+礧磈,lěikuǐ
 礨,lěi
 礩,zhí
 礪,lì
@@ -20869,6 +20810,9 @@
 秋耕,qiūgēng
 秋莊稼,qiūzhuāngjia
 种,chóng
+种師中,chóngshīzhōng
+种師道,chóngshīdào
+种放,chóngfàng
 秎,fèn
 秏,hào
 科,kē
@@ -20912,6 +20856,7 @@
 移調樂器,yídiàoyuèqì
 稀,xī
 稀薄,xībó
+稀里嘩啦,xīlǐhuālā
 稂,láng
 稂不稂莠不莠,lángbùlángyǒubùyǒu
 稂莠,lángyǒu
@@ -21121,7 +21066,6 @@
 窄韻,zhǎiyùn
 窄鱉鱉,zhǎibiēbiē
 窅,yǎo
-窅窱,yǎotiǎo
 窆,biǎn
 窈,yǎo
 窊,wā
@@ -21137,7 +21081,6 @@
 窗戶,chuānghu
 窗戶眼兒,chuānghuyǎnr(變)chuānghuyǎr
 窗戶紙,chuānghuzhǐ
-窗明几淨,chuāngmíngjǐjìng
 窘,jiǒng
 窘態百出,jiǒngtàibǎichū
 窞,dàn
@@ -21946,7 +21889,6 @@
 絞車,jiǎochē
 絡,luò
 絡子,làozi
-絡縸,luòmò
 絢,xuàn
 絣,bēng
 給,jǐ
@@ -22359,7 +22301,6 @@
 繃臉,běngliǎn
 繃裂,bèngliè
 繄,yī
-繄袼,yīluò
 繅,sāo
 繅車,sāochē
 繆,móu
@@ -22370,7 +22311,6 @@
 繇,yóu
 繇繇,yáoyáo
 繈,qiǎng
-繈緥,qiǎngbǎo
 繐,suì
 繑,qiāo
 繒,zēng
@@ -22393,7 +22333,6 @@
 繠,ruǐ
 繡,xiù
 繡帖兒,xiù　tiěr　(變)xiù　tiěr
-繡幙牽絲,xiùmùqiānsī
 繡花枕頭,xiùhuāzhěntou
 繢,huì
 繣,huà
@@ -22466,7 +22405,6 @@
 缽子,bōzi
 缾,píng
 缿,xiàng
-缿筩,xiàngtǒng
 罃,yīng
 罄,qìng
 罅,xià
@@ -23247,7 +23185,6 @@
 胡桃鉗組曲,hútáoqiánzǔqǔ
 胡歌野調,húgēyědiào
 胡笳十八拍,hújiāshíbāpāi
-胡耈,húgǒu
 胡胡盧盧,húhulúlú(變)húhulūlū
 胡蘿蔔,húluóbo
 胡蘿蔔就燒酒,húluóbojiùshāojiǔ
@@ -23303,12 +23240,10 @@
 脈絡膜,màiluòmó
 脈脈,mòmò
 脊,jǐ
-脊檁,jǐlǐn
 脊百合,jǐbǎihé
 脖,bó
 脖兒枴,bórguǎi
 脖子,bózi
-脖胦,bóyāng
 脖頸兒,bógěngr
 脖頸子,bógěngzi
 脘,（語音）wǎn
@@ -23348,6 +23283,7 @@
 腆,tiǎn
 腆著臉,tiǎnzheliǎn
 腊,xí
+腊毒,xídú
 腋,（語音）yè
 腋下,yèxià
 腋毛,yèmáo
@@ -23526,8 +23462,6 @@
 膀胱鏡,pángguāngjìng
 膂,lǚ
 膃,wà
-膃肭,wànà
-膃肭臍,wànàqí
 膆,sù
 膇,zhuì
 膈,gé
@@ -23845,6 +23779,9 @@
 舔,tiǎn
 舕,tàn
 舚,tiàn
+舚破,tiànpò
+舚脣咂嘴,tiànchúnzāzuǐ
+舚舕,tiàntàn
 舛,chuǎn
 舜,shùn
 舜華,shùnhuā
@@ -23917,6 +23854,7 @@
 艭,shuāng
 艮,gèn
 良,liáng
+良价,liángjiè
 良將,liángjiàng
 良將賢相,liángjiàngxiánxiàng
 良相,liángxiàng
@@ -23947,7 +23885,6 @@
 芄,wán
 芅,yì
 芊,qiān
-芊萰,qiānliàn
 芋,yù
 芋頭,yùtou
 芍,（語音）sháo
@@ -23976,7 +23913,6 @@
 芟,shān
 芡,qiàn
 芣,fóu
-芣苢,fóuyǐ
 芥,jiè
 芥子園畫傳,jièzǐyuánhuàzhuàn
 芧,xù
@@ -24054,6 +23990,12 @@
 芵,jué
 芷,zhǐ
 芸,yún
+芸窗,yúnchuāng
+芸編,yúnbiān
+芸芸,yúnyún
+芸芸眾生,yúnyúnzhòngshēng
+芸香,yúnxiāng
+芸香科,yúnxiāngkē
 芹,qín
 芺,yāo
 芻,chú
@@ -24172,7 +24114,6 @@
 茵,yīn
 茶,chá
 茶上,cháshang
-茶几,chájǐ
 茶局子,chájúzi
 茶攤兒,chátānr(變)chátār
 茶水錢,cháshuiqián
@@ -24190,7 +24131,6 @@
 茻,mǎng
 茼,tóng
 荀,xún
-荀勖,xúnxù
 荂,huā
 荃,quán
 荃葛,quángě
@@ -24583,7 +24523,6 @@
 葴,zhēn
 葵,kuí
 葶,tíng
-葶藶,tínglì
 葷,hūn
 葷允,xūnyǔn
 葷油蒙了心,hūnyóuménglexīn
@@ -24629,7 +24568,6 @@
 蒲笨車,púbènchē
 蒲車,púchē
 蒲鞭示辱,púbiānshìrù
-蒲鞵,púxié
 蒴,shuò
 蒸,zhēng
 蒸熟的鴨子,zhēngshóudeyāzi
@@ -24684,7 +24622,6 @@
 蓬,péng
 蓬拆,péngchāi
 蓬茆,péngmáo
-蓬虆,péngléi
 蓬顆,péngkě
 蓮,lián
 蓮花樂,liánhuālè
@@ -24933,7 +24870,6 @@
 薷,rú
 薹,tái
 薺,jì
-薺薴,jìníng
 薿,nǐ
 藂,cóng
 藃,hào
@@ -25179,7 +25115,6 @@
 虱,shī
 虷,hán
 虹,hóng
-虹蜺,hóngní
 虺,huǐ
 虺隤,huītuí
 虻,méng
@@ -25236,7 +25171,6 @@
 蛐蛐兒,qū　qur　(變)qū　quer
 蛐蛐兒罩子,qū　qur　zhào　zi　(變)qū　quer　zhào　zi
 蛐蛐罐兒,qūquguànr(變)qūquguàr
-蛐蟮,qūshàn
 蛑,móu
 蛓,cì
 蛔,huí
@@ -25293,7 +25227,6 @@
 蜚聲,fēishēng
 蜚聲中外,fēishēngzhōngwài
 蜚英騰茂,fēiyīngténgmào
-蜚蠊,fěilián
 蜚語,fēiyǔ
 蜜,mì
 蜜丸子,mìwánzi
@@ -25303,6 +25236,8 @@
 蜜裡調油,mìlitiáoyóu
 蜞,qí
 蜡,zhà
+蜡月,zhàyuè
+蜡祭,zhàjì
 蜢,měng
 蜣,qiāng
 蜤,sī
@@ -25385,8 +25320,6 @@
 螄,sī
 螅,xī
 螇,xī
-螇蚸,xīlì
-螇螰,xīlù
 螈,yuán
 螋,sōu
 螌,bān
@@ -25413,7 +25346,6 @@
 螭,chī
 螯,áo
 螲,dié
-螲蟷,diédàng
 螳,táng
 螳臂當車,tángbìdǎngchē
 螵,piāo
@@ -25451,7 +25383,6 @@
 蟒,mǎng
 蟙,zhí
 蟛,péng
-蟛螖,pénghuá
 蟠,pán
 蟢,xǐ
 蟢子,xǐzi
@@ -25461,7 +25392,6 @@
 蟫,tán
 蟬,chán
 蟭,jiāo
-蟭蟟蟲,jiāoliáochóng
 蟯,ráo
 蟲,chóng
 蟲兒,chóngr
@@ -25527,7 +25457,6 @@
 蠶兒似的,cánr　sì　de　(變)cár　sì　de
 蠶寶寶,cánbǎobao
 蠷,qú
-蠷蝚,qúróu
 蠹,dù
 蠹居棋處,dùjūqíchǔ
 蠻,mán
@@ -25836,6 +25765,7 @@
 袙,pà
 袛,dī
 袜,mò
+袜肚,mòdù
 袞,gǔn
 袞州八伯,gǔnzhōubābó
 袞遍,gǔnbiàn
@@ -25855,7 +25785,6 @@
 被甲兵,pījiǎbīng
 被禍,pīhuò
 被窩裡放屁,bèiwōlifàngpì
-被筩,bèitǒng
 被罪,pīzuì
 被臥,bèiwo
 被褐,pīhé
@@ -25911,7 +25840,6 @@
 補血,bǔxiě
 補釘,bǔding
 補闕,bǔquē
-補靪,bǔding
 裝,zhuāng
 裝兔子,zhuāngtùzi
 裝孫子,zhuāngsūnzi
@@ -26398,7 +26326,6 @@
 評彈,píngtán
 評書帖,píngshūtiě
 評薄,píngbó
-評詙,píngbá
 詖,bì
 詖行,bìxìng
 詗,xiòng
@@ -26955,7 +26882,6 @@
 豝,bā
 象,xiàng
 象傳,xiàngzhuàn
-象揥,xiàngtì
 象腳鼓,xiàngjiǎogǔ
 象車,xiàngjū
 豢,huàn
@@ -27094,6 +27020,7 @@
 貴,guì
 貴人多忘,guìrénduōwàng
 貴人多忘事,guìrénduōwàngshì
+貴价,guìjiè
 貴相,guìxiàng
 貴霜王朝,guìshuāngwángcháo
 貶,biǎn
@@ -27311,7 +27238,6 @@
 赤血丹心,chìxiědānxīn
 赤血鹽,chìxiěyán
 赤身露體,chìshēnlòutǐ
-赤鯶公,chìhùngōng
 赦,shè
 赧,nǎn
 赨,tóng
@@ -27703,7 +27629,6 @@
 蹶子,juězi
 蹶角,juéjué
 蹺,qiāo
-蹺敧,qiāoqī
 蹺辮子,qiāobiànzi
 蹻,qiāo
 蹻勇,jiǎoyǒng
@@ -29143,7 +29068,6 @@
 野小子,yěxiǎozi
 野性的呼喚,yěxìngdehūhuàn
 野意兒,yě　yìr　(變)yě　yèr
-野有死麕,yěyǒusǐjūn
 野漢子,yěhànzi
 野狐狸,yěhúli
 野百合,yěbǎihé
@@ -29240,7 +29164,6 @@
 針腳,zhēnjiǎo
 針針見血,zhēnzhēnjiànxiě
 針頭,zhēntou
-針鼹,zhēnyǎn
 針鼻兒,zhēn　bír　(變)zhēn　biér
 釢,nǎi
 釣,diào
@@ -29383,7 +29306,6 @@
 銖兩悉稱,zhūliǎngxīchèng　（又音）zhūliǎngxīchèn
 銖銖校量,zhūzhūjiàoliàng
 銗,xiàng
-銗筩,xiàngtǒng
 銘,míng
 銚,yáo
 銚子,diàozi
@@ -29845,7 +29767,6 @@
 開,kāi
 開倒車,kāidàochē
 開口子,kāikǒuzi
-開嗙,kāipǎng
 開堂歃血,kāitángshàxiě
 開場白,kāichángbái
 開夜車,kāiyèchē
@@ -30541,7 +30462,6 @@
 雪,xuě
 雪獅子向火,xuěshīzixiànghuǒ
 雪白,xuěbái　（又音）xuèbái
-雪窗螢几,xuěchuāngyíngjǐ
 雪茄,xuějiā
 雪車,xuěchē
 雯,wén
@@ -31003,7 +30923,6 @@
 頭箍兒,tóugūr
 頭絮兒,tóu　xùr　(變)tóu　xüèr
 頭肘子,tóuzhǒuzi
-頭蓬眼瘇,tóupéngyǎnzhǒng
 頭行,tóuháng
 頭裡,tóuli
 頭角兒,tóujiǎor
@@ -31052,7 +30971,6 @@
 顛,diān
 顛不剌的,diānbulāde
 顛倒黑白,diāndǎohēibái
-顛蕀,diānjí
 顜,jiǎng
 類,lèi
 類別的團體,lèibiédetuántǐ
@@ -31363,7 +31281,6 @@
 香車寶馬,xiāngchēbǎomǎ
 香鋪,xiāngpù
 香餑餑,xiāngbōbo
-香麞,xiāngzhāng
 馝,bì
 馞,bó
 馡,fēi
@@ -31447,7 +31364,6 @@
 駊,pǒ
 駍,pēng
 駏,jù
-駏驉,jùxū
 駐,zhù
 駑,nú
 駑散,núsǎn
@@ -31516,7 +31432,6 @@
 騎馬不帶鞭子,qímǎbùdàibiānzi
 騎鶴揚州,qíhèyángzhōu
 騏,qí
-騏驎,qílín
 騑,fēi
 騕,yǎo
 騖,wù
@@ -31603,7 +31518,6 @@
 骨相,gǔxiang
 骨碌,gúlu
 骨碌碌,gúlùlu
-骨肉團圞,gǔròutuánluán
 骨肉重逢,gǔròuchóngféng
 骨董行,gǔdǒngháng
 骨血,gǔxiě
@@ -31635,7 +31549,6 @@
 骾朴,gěngpú
 骿,pián
 髀,bì
-髀骶,bìdǐ
 髁,kē
 髂,kà
 髆,bó
@@ -31831,7 +31744,6 @@
 鬼弄,guǐnòng
 鬼影子,guǐyǐngzi
 鬼推磨,guǐtuīmò
-鬼攛揝,guǐcuānzuàn
 鬼車,guǐchē
 鬼迷了張天師,guǐmílezhāngtiānshī
 鬼酉上車,guǐyǒushàngchē
@@ -31884,6 +31796,7 @@
 魨,tún
 魬,bàn
 魭,wǎn
+魭斷,wǎnduàn
 魯,lǔ
 魯孝王刻石,lǔxiàowángkēshí
 魯般手裡調大斧,lǔbānshǒulǐdiàodàfǔ
@@ -32107,7 +32020,6 @@
 鵠的,gǔdì
 鵡,wǔ
 鵧,píng
-鵧鷑,pínglì
 鵩,fú
 鵪,ān
 鵬,péng
@@ -32187,7 +32099,6 @@
 鶴鶴,hèhè
 鶴齡,hèlíng
 鶹,liú
-鶹鷅,liúlì
 鶺,jí
 鶻,gǔ
 鶻入鴉群,húrùyāqún
@@ -32469,10 +32380,8 @@
 黃白之術,huángbáizhīshù
 黃百韜,huángbǎitāo
 黃童白叟,huángtóngbáisǒu
-黃耉,huánggǒu
 黃腔兒,huángqiāngr
 黃花女兒,huáng　huā　nǚr　(變)huáng　huā　nüěr
-黃菓樹瀑布,huángguǒshùpùbù
 黃貓黑尾,huángmāohēiwěi
 黃連樹下彈琴,huángliánshùxiàtánqín
 黃道黑道,huángdàohēidào
@@ -33115,7 +33024,7 @@
 曬,shài
 朞,qí
 朶,duǒ
-机,（讀音）jǐ
+机,jǐ
 枏,nán
 枟,tán
 柜,guì

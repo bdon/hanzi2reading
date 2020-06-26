@@ -38,9 +38,18 @@ with open('../moedict-data/dict-revised.json','r') as f:
 
 for char, alias in aliases.items():
     entries.append((char,chars[alias]))
+    chars[char] = chars[alias]
 
 print(f"Dictionary entries: {len(entries)}")
 print(f"Single chars: {len(chars)}")
+
+# find any 2-grams or greater where the 1-gram is missing
+# example: 湳
+for entry in entries:
+    parts = entry[1].split(separator)
+    for idx, c in enumerate(entry[0]):
+        if c not in chars:
+            chars[c] = parts[idx]
 
 # Compress the list of dictionary entries.
 # any multi-character entry where all characters match the single-character reading
@@ -52,7 +61,7 @@ for entry in entries:
         reduced.append(entry)
     else:
         parts = entry[1].split(separator)
-        if [chars.get(c,'?') for c in entry[0]] == parts: # 櫈
+        if [chars[c] for c in entry[0]] == parts: # 櫈
             redundant = redundant + 1
         else:
             reduced.append(entry)
