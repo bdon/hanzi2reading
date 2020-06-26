@@ -1,3 +1,4 @@
+import os
 import sys
 
 class TrieNode:
@@ -41,8 +42,11 @@ class Trie:
         return reading
 
 class Reading:
-    def __init__(self,fname):
+    def __init__(self,fname=None):
         self._trie = Trie()
+
+        if not fname:
+            fname = os.path.join(os.path.dirname(__file__), 'data/pinyin.txt')
 
         with open(fname,'r') as f:
             for x in f.readlines():
@@ -52,7 +56,3 @@ class Reading:
     def get(self,hanzi):
         return self._trie.get(hanzi)
 
-r = Reading(sys.argv[1])
-print(r.get('行'))
-print(r.get('臺'))
-print(r.get('台灣銀行'))
