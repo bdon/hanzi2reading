@@ -1,9 +1,6 @@
-# Create a list of [unicode codepoint -> [reading sequence]] for each dictionary entry.
+# Create a list of [unicode codepoints -> [reading sequence]] for each dictionary entry.
 # assumes the heteronyms are listed in decreasing frequency.
 # in this case, a character with multiple readings will have the first one chosen
-
-# Compress the list of dictionary entries.
-# any multi-character entry where all characters have a single reading is removed.
 
 import json
 import re
@@ -42,10 +39,11 @@ with open('../moedict-data/dict-revised.json','r') as f:
 for char, alias in aliases.items():
     entries.append((char,chars[alias]))
 
-
-
 print(f"Dictionary entries: {len(entries)}")
-print(f"Single reading chars: {len(chars)}")
+print(f"Single chars: {len(chars)}")
+
+# Compress the list of dictionary entries.
+# any multi-character entry where all characters match the single-character reading
 
 redundant = 0
 reduced = []
@@ -64,5 +62,3 @@ print(f"Final entries: {len(reduced)}")
 with open(sys.argv[1],'w') as f:
     for entry in reduced:
         f.write("{0},{1}\n".format(entry[0],entry[1].replace(separator,'')))
-
-
