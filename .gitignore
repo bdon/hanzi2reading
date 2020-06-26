@@ -1,2 +1,6 @@
 target
 moedict-data
+build
+dist
+__pycache__
+*.egg-info
