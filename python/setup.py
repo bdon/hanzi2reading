@@ -23,5 +23,5 @@ setuptools.setup(
     ],
     scripts=['bin/hanzi2reading'],
     requires_python='>=3.0',
-    package_data={'hanzi2reading':['../data/*.txt']}
+    package_data={'hanzi2reading':['data/*.txt']}
 )
