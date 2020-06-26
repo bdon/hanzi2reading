@@ -32,9 +32,18 @@ with open('../moedict-data/dict-revised.json','r') as f:
         continue
     heteronym_1 = entries_with_bpmf[0]
 
-    entries.append((title, heteronym_1[key]))
+    pron = heteronym_1[key]
+    if "（" in pron:
+        pre = re.match("（(語|讀)音）(.+)",pron)
+        if pre:
+            pron = pre.group(2)
+        else:
+            start = pron.index("（")
+            pron = pron[0:start-1]
+
+    entries.append((title, pron))
     if len(title) == 1:
-        chars[title] = heteronym_1[key]
+        chars[title] = pron
 
 for char, alias in aliases.items():
     entries.append((char,chars[alias]))
