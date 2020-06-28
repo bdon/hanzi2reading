@@ -5,6 +5,7 @@
 import json
 import re
 import sys
+from zhuyin import parse as zhuyin_parse
 
 # remove all non-BMP characters
 RE = re.compile(u'^[⺀-⺙⺛-⻳⼀-⿕々〇〡-〩〸-〺〻㐀-䶵一-鿃豈-鶴侮-頻並-龎]+$', re.UNICODE)
@@ -13,8 +14,8 @@ entries = []
 chars = {}
 aliases = {}
 
-key = 'pinyin'
-separator = ' ' # '\u3000'
+key = 'bopomofo'
+separator = '\u3000'
 
 with open('../moedict-data/dict-revised.json','r') as f:
   for entry in json.loads(f.read()):
@@ -40,6 +41,14 @@ with open('../moedict-data/dict-revised.json','r') as f:
         else:
             start = pron.index("（")
             pron = pron[0:start-1]
+    if "(" in pron:
+        start = pron.index("(")
+        pron = pron[0:start-1]
+
+    # replace double space with \u3000
+    pron = pron.replace('  ','\u3000')
+    # replace extra spaces
+    pron = pron.replace(' ','')
 
     entries.append((title, pron))
     if len(title) == 1:
@@ -79,4 +88,7 @@ print(f"Eliminated entries: {redundant}")
 print(f"Final entries: {len(reduced)}")
 with open(sys.argv[1],'w') as f:
     for entry in reduced:
+        for z in entry[1].split('\u3000'):
+            zhuyin_parse(z)
+
         f.write("{0},{1}\n".format(entry[0],entry[1].replace(separator,'')))

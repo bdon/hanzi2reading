@@ -1,11 +1,11 @@
 import re
-from .syllable import Syllable
+from hanzi2reading.syllable import Syllable
 
 INITIALS = 'ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ'
 MEDIALS = 'ㄧㄨㄩ'
 FINALS = 'ㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥ'
 TONES = 'ˊˇˋ˙'
-RE = re.compile("^(˙?)([" + INITIALS + "]?)([" + MEDIALS + "]?)([" + FINALS + "]?)([ˊˇˋ]?)(ㄦ?)$")
+RE = re.compile("^(˙?)([" + INITIALS + "]?)([" + MEDIALS + "]?)([" + FINALS + "]?)(ㄦ?)([ˊˇˋ]?)(ㄦ?)$")
 
 def parse(z):
     initial = 0
@@ -22,10 +22,10 @@ def parse(z):
         medial = MEDIALS.index(match.group(3)) + 1
     if match.group(4):
         final = FINALS.index(match.group(4)) + 1
-    if match.group(5):
-        tone = TONES.index(match.group(5)) + 1
-    if match.group(6):
+    if match.group(5) or match.group(7):
         erhua = True
+    if match.group(6):
+        tone = TONES.index(match.group(6)) + 1
     return Syllable(initial,medial,final,tone,erhua)
 
 def get(s):
