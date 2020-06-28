@@ -13,7 +13,7 @@ NO_INITIAL = [
     ['yu', '',   '', '','yue',   '',   '',   '',   '','yuan','yun',    '','yong']
 ]
 
-def get(s):
+def get(s,tones=True):
     p = ''
     if s.initial == 0:
         p += NO_INITIAL[s.medial][s.final]
@@ -38,22 +38,23 @@ def get(s):
         else:
             p += 'r'
 
-    if s.tone <= 4:
-        if 'a' in p:
-            p = p.replace('a','āáǎà'[s.tone - 1])
-        elif 'e' in p:
-            p = p.replace('e','ēéěè'[s.tone - 1])
-        elif 'o' in p:
-            p = p.replace('o','ōóǒò'[s.tone - 1])
-        elif 'iu' in p:
-            p = p.replace('u','ūúǔù'[s.tone - 1])
-        elif 'ui' in p:
-            p = p.replace('i','īíǐì'[s.tone - 1])
-        elif 'i' in p:
-            p = p.replace('i','īíǐì'[s.tone - 1])
-        elif 'u' in p:
-            p = p.replace('u','ūúǔù'[s.tone - 1])
-        elif 'ü' in p:
-            p = p.replace('ü','ǖǘǚǜ'[s.tone - 1])
+    if tones:
+        if s.tone <= 4:
+            if 'a' in p:
+                p = p.replace('a','āáǎà'[s.tone - 1])
+            elif 'e' in p:
+                p = p.replace('e','ēéěè'[s.tone - 1])
+            elif 'o' in p:
+                p = p.replace('o','ōóǒò'[s.tone - 1])
+            elif 'iu' in p:
+                p = p.replace('u','ūúǔù'[s.tone - 1])
+            elif 'ui' in p:
+                p = p.replace('i','īíǐì'[s.tone - 1])
+            elif 'i' in p:
+                p = p.replace('i','īíǐì'[s.tone - 1])
+            elif 'u' in p:
+                p = p.replace('u','ūúǔù'[s.tone - 1])
+            elif 'ü' in p:
+                p = p.replace('ü','ǖǘǚǜ'[s.tone - 1])
 
     return p
