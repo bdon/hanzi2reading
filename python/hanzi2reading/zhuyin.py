@@ -25,7 +25,7 @@ def parse(z):
     if match.group(5) or match.group(7):
         erhua = True
     if match.group(6):
-        tone = TONES.index(match.group(6)) + 1
+        tone = TONES.index(match.group(6)) + 2
     return Syllable(initial,medial,final,tone,erhua)
 
 def get(s):
@@ -39,7 +39,7 @@ def get(s):
     if s.final > 0:
         z += FINALS[s.final-1]
     if s.tone >= 2 and s.tone <= 4:
-        z += TONES[s.tone-1]
+        z += TONES[s.tone-2]
     if s.erhua:
         z += '儿'
     return z

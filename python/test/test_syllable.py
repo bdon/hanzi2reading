@@ -13,6 +13,21 @@ class TestSyllable(unittest.TestCase):
         self.assertFalse(s.erhua)
         self.assertEqual(zhuyin.get(s),'ㄎㄧㄤ')
 
+    def test_second_tone(self):
+        pass
+
+    def test_third_tone(self):
+        pass
+
+    def test_fourth_tone(self):
+        pass
+
+    def test_erhua_before(self):
+        pass
+
+    def test_erhua_after(self):
+        pass
+
     def test_fifth_tone(self):
         s = zhuyin.parse('˙ㄇㄚ')
         self.assertEqual(s.initial,3)
@@ -53,3 +68,5 @@ class TestSyllable(unittest.TestCase):
 
         zp('ㄎㄧㄤ','kiāng')
         zp('ㄉㄨㄤ','duāng')
+
+        zp('ㄒㄧㄥˊ','xíng')

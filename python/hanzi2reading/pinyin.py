@@ -1,6 +1,11 @@
 INITIALS = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','sh','r','z','c','s']
 MEDIALS = ['i','u','ü']
-FINALS = ['a','o','e','ie','ai','ei','ao','ou','an','en','ang','eng']
+FINALS = [
+    ['a','o','e','ie','ai','ei','ao','ou','an','en','ang','eng'],
+    ['a','o','e','ie','ai','ei','ao','ou','an','en','ang','ng'],
+    ['a','o','e','ie','ai','ei','ao','ou','an','en','ang','eng'],
+    ['a','o','e','ie','ai','ei','ao','ou','an','en','ang','eng']
+]
 NO_INITIAL = [
     [  '', 'a', 'o','e',  'ê', 'ai', 'ei', 'ao',' ou',  'an', 'en', 'ang', 'eng'],
     ['yi','ya',  '', '', 'ye',   '',   '','yao','you', 'yan','yin','yang','ying'],
@@ -35,7 +40,7 @@ def get(s):
             if s.medial > 0:
                 p += MEDIALS[s.medial-1]
             if s.final > 0:
-                p += FINALS[s.final-1]
+                p += FINALS[s.medial][s.final-1]
 
     if 'a' in p:
         p = p.replace('a','āáǎà'[s.tone - 1])
