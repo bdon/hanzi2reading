@@ -1,8 +1,7 @@
 import unittest
 from hanzi2reading import Trie
 
-class TestTrie(unittest.TestCase):
-
+class TestRead(unittest.TestCase):
     def test_basic(self):
         t = Trie()
         t.add('a','a')
@@ -41,6 +40,3 @@ class TestTrie(unittest.TestCase):
         t = Trie()
         t.add('a','ab')
         self.assertEqual(t.get('x'),'')
-
-if __name__ == '__main__':
-    unittest.main()

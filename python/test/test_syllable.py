@@ -25,7 +25,7 @@ class TestSyllable(unittest.TestCase):
     def test_to_bytes(self):
         b = zhuyin.parse('ㄎㄧㄤ').to_bytes()
         self.assertEqual(len(b),2)
-        self.assertEqual(b,b'\x29\xb2') # 0b 0010 1001 1011 0010
+        self.assertEqual(b,b'\xb2\x29') # 0b 1011 0010 0010 1001 
         self.assertEqual(zhuyin.get(Syllable.from_bytes(b)),'ㄎㄧㄤ')
 
     def test_pinyin(self):
@@ -53,6 +53,3 @@ class TestSyllable(unittest.TestCase):
 
         zp('ㄎㄧㄤ','kiāng')
         zp('ㄉㄨㄤ','duāng')
-
-if __name__ == '__main__':
-    unittest.main()

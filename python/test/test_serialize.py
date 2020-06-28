@@ -15,6 +15,3 @@ class TestFile(unittest.TestCase):
             self.assertEqual(headword,'夯')
             self.assertEqual(syllables[0].initial,11)
             self.assertEqual(syllables[0].final,11)
-
-if __name__ == '__main__':
-    unittest.main()
