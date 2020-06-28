@@ -38,8 +38,10 @@ def get(s):
         z += MEDIALS[s.medial-1]
     if s.final > 0:
         z += FINALS[s.final-1]
+    if s.initial == 0 and s.medial == 0 and s.final == 0 and s.er:
+        z += 'ㄦ'
     if s.tone >= 2 and s.tone <= 4:
         z += TONES[s.tone-2]
-    if s.er: # TODO place
-        z += '儿'
+    if not (s.initial == 0 and s.medial == 0 and s.final == 0) and s.er:
+        z += 'ㄦ'
     return z

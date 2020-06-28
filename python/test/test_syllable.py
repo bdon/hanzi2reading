@@ -14,11 +14,11 @@ class TestSyllable(unittest.TestCase):
         self.assertFalse(s.er)
         self.assertEqual(zhuyin.get(s),'ㄎㄧㄤ')
 
-    def test_er_before(self):
-        pass
-
-    def test_er_after(self):
-        pass
+    def test_er(self):
+        self.assertEqual(zhuyin.get(zhuyin.parse("ㄔㄨㄦ")),"ㄔㄨㄦ")
+        self.assertEqual(zhuyin.get(zhuyin.parse("˙ㄊㄡㄦ")),"˙ㄊㄡㄦ")
+        self.assertEqual(zhuyin.get(zhuyin.parse("ㄔㄚˊㄦ")),"ㄔㄚˊㄦ")
+        self.assertEqual(zhuyin.get(zhuyin.parse("ㄦˇ")),"ㄦˇ")
 
     def test_fifth_tone(self):
         s = zhuyin.parse('˙ㄇㄚ')
