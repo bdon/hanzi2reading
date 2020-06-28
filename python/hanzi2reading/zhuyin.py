@@ -40,6 +40,6 @@ def get(s):
         z += FINALS[s.final-1]
     if s.tone >= 2 and s.tone <= 4:
         z += TONES[s.tone-2]
-    if s.erhua:
+    if s.erhua: # TODO place
         z += '儿'
     return z

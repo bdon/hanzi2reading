@@ -8,6 +8,6 @@ import hanzi2reading.pinyin as pinyin
 reading = Reading()
 result = reading.get(sys.argv[1])
 z = [zhuyin.get(s) for s in result]
-p = [pinyin.get(s) for s in result]
 print(' '.join(z))
+p = [pinyin.get(s) for s in result]
 print(' '.join(p))

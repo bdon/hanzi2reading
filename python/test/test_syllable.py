@@ -63,10 +63,20 @@ class TestSyllable(unittest.TestCase):
 
         zp('ㄐㄧㄝ','jiē')
         zp('ㄌㄧㄡ','liū')
+
         zp('ㄉㄨㄟ','duī')
+        zp('ㄉㄨㄟˊ','duí')
+        zp('ㄉㄨㄟˇ','duǐ')
+        zp('ㄉㄨㄟˋ','duì')
+        zp('˙ㄉㄨㄟ','dui')
+
         zp('ㄉㄨㄣ','dūn')
 
         zp('ㄎㄧㄤ','kiāng')
         zp('ㄉㄨㄤ','duāng')
 
         zp('ㄒㄧㄥˊ','xíng')
+        zp('ㄒㄩㄥˊ','xióng')
+
+        zp('ㄠ','āo')
+
