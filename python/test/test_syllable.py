@@ -10,7 +10,7 @@ class TestSyllable(unittest.TestCase):
         self.assertEqual(s.medial,1)
         self.assertEqual(s.final,11)
         self.assertEqual(s.tone,1)
-        self.assertFalse(s.erhua)
+        self.assertFalse(s.er)
         self.assertEqual(zhuyin.get(s),'ㄎㄧㄤ')
 
     def test_second_tone(self):
@@ -22,10 +22,10 @@ class TestSyllable(unittest.TestCase):
     def test_fourth_tone(self):
         pass
 
-    def test_erhua_before(self):
+    def test_er_before(self):
         pass
 
-    def test_erhua_after(self):
+    def test_er_after(self):
         pass
 
     def test_fifth_tone(self):
@@ -34,7 +34,7 @@ class TestSyllable(unittest.TestCase):
         self.assertEqual(s.medial,0)
         self.assertEqual(s.final,1)
         self.assertEqual(s.tone,5)
-        self.assertFalse(s.erhua)
+        self.assertFalse(s.er)
         self.assertEqual(zhuyin.get(s),'˙ㄇㄚ')
 
     def test_to_bytes(self):

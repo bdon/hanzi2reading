@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-SyllableData = namedtuple('SyllableData',['initial','medial','final','tone','erhua'])
+SyllableData = namedtuple('SyllableData',['initial','medial','final','tone','er'])
 
 class Syllable(SyllableData):
     def to_bytes(self):
@@ -9,7 +9,7 @@ class Syllable(SyllableData):
         encoded |= (self.medial << 8)
         encoded |= (self.final << 4)
         encoded |= (self.tone << 1)
-        encoded |= (self.erhua)
+        encoded |= (self.er)
         return encoded.to_bytes(2,byteorder='little')
 
     @classmethod
@@ -19,5 +19,5 @@ class Syllable(SyllableData):
         medial = i >> 8 & 0b11
         final = i >> 4 & 0b1111
         tone = i >> 1 & 0b111
-        erhua = i & 0b1
-        return cls(initial,medial,final,tone,erhua)
+        er = i & 0b1
+        return cls(initial,medial,final,tone,er)

@@ -48,6 +48,6 @@ def get(s):
         elif 'ü' in p:
             p = p.replace('ü','ǖǘǚǜ'[s.tone - 1])
 
-    # TODO erhua
+    # TODO er
 
     return p

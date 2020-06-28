@@ -11,7 +11,7 @@ def parse(z):
     initial = 0
     medial = 0
     final = 0
-    erhua = 0
+    er = 0
     tone = 1
     match = re.match(RE,z)
     if match.group(1):
@@ -23,10 +23,10 @@ def parse(z):
     if match.group(4):
         final = FINALS.index(match.group(4)) + 1
     if match.group(5) or match.group(7):
-        erhua = True
+        er = True
     if match.group(6):
         tone = TONES.index(match.group(6)) + 2
-    return Syllable(initial,medial,final,tone,erhua)
+    return Syllable(initial,medial,final,tone,er)
 
 def get(s):
     z = ''
@@ -40,6 +40,6 @@ def get(s):
         z += FINALS[s.final-1]
     if s.tone >= 2 and s.tone <= 4:
         z += TONES[s.tone-2]
-    if s.erhua: # TODO place
+    if s.er: # TODO place
         z += '儿'
     return z
