@@ -1,5 +1,6 @@
 import os
 import sys
+from hanzi2reading.serialize import read
 
 class TrieNode:
     def __init__(self):
@@ -20,12 +21,12 @@ class Trie:
                 node.val = value
 
     def get(self,s):
-        reading = ''
+        reading = []
         i = 0
         while i < len(s):
             j = i
             node = self._t
-            candidate = ''
+            candidate = []
             candidate_depth = 0
             depth = 0
             if s[j] not in node.children:
@@ -49,12 +50,11 @@ class Reading:
         self._trie = Trie()
 
         if not fname:
-            fname = os.path.join(os.path.dirname(__file__), 'data/pinyin.txt')
+            fname = os.path.join(os.path.dirname(__file__), 'data/moedict.h2r')
 
-        with open(fname,'r') as f:
-            for x in f.readlines():
-                pair = x.rstrip().split(',')
-                self._trie.add(pair[0],pair[1])
+        with open(fname,'rb') as f:
+            for headword, syllables in read(f):
+                self._trie.add(headword,syllables)
 
     def get(self,hanzi):
         return self._trie.get(hanzi)

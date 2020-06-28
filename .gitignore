@@ -1,7 +1,5 @@
-target
-moedict-data
 build
+moedict-data
 dist
 __pycache__
 *.egg-info
-*.h2r

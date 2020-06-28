@@ -1,5 +1,5 @@
 import unittest
-from hanzi2reading import Syllable
+from hanzi2reading.syllable import Syllable
 import hanzi2reading.zhuyin as zhuyin
 import hanzi2reading.pinyin as pinyin
 

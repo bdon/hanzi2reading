@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 
 import sys
-from hanzi2reading import Reading
+from hanzi2reading.reading import Reading
+import hanzi2reading.zhuyin as zhuyin
+import hanzi2reading.pinyin as pinyin
 
 reading = Reading()
-print(reading.get(sys.argv[1]))
+result = reading.get(sys.argv[1])
+z = [zhuyin.get(s) for s in result]
+p = [pinyin.get(s) for s in result]
+print(' '.join(z))
+print(' '.join(p))

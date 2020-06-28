@@ -9,7 +9,7 @@ class TestFile(unittest.TestCase):
         b = BytesIO()
         write(b,entries)
         b.seek(0)
-        self.assertEqual(len(b.read()),1+3+2)
+        self.assertEqual(len(b.read()),2+3+2)
         b.seek(0)
         for headword, syllables in read(b):
             self.assertEqual(headword,'夯')

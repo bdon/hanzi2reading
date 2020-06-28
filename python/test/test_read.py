@@ -1,5 +1,5 @@
 import unittest
-from hanzi2reading import Trie
+from hanzi2reading.reading import Trie
 
 class TestRead(unittest.TestCase):
     def test_basic(self):
