@@ -10,11 +10,11 @@ class Syllable(SyllableData):
         encoded |= (self.final << 4)
         encoded |= (self.tone << 1)
         encoded |= (self.erhua)
-        return encoded.to_bytes(2,byteorder='big')
+        return encoded.to_bytes(2,byteorder='little')
 
     @classmethod
     def from_bytes(cls,b):
-        i = int.from_bytes(b,byteorder='big')
+        i = int.from_bytes(b,byteorder='little')
         initial = i >> 10 & 0b11111
         medial = i >> 8 & 0b11
         final = i >> 4 & 0b1111

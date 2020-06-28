@@ -6,6 +6,7 @@ import json
 import re
 import sys
 from zhuyin import parse as zhuyin_parse
+from hanzi2reading.serialize import write
 
 # remove all non-BMP characters
 RE = re.compile(u'^[⺀-⺙⺛-⻳⼀-⿕々〇〡-〩〸-〺〻㐀-䶵一-鿃豈-鶴侮-頻並-龎]+$', re.UNICODE)
@@ -20,6 +21,8 @@ separator = '\u3000'
 with open('../moedict-data/dict-revised.json','r') as f:
   for entry in json.loads(f.read()):
     title = entry['title']
+    if len(title) > 8:
+        continue
     if not RE.match(title):
         continue
 
@@ -50,12 +53,12 @@ with open('../moedict-data/dict-revised.json','r') as f:
     # replace extra spaces
     pron = pron.replace(' ','')
 
-    entries.append((title, pron))
+    entries.append([title, pron])
     if len(title) == 1:
         chars[title] = pron
 
 for char, alias in aliases.items():
-    entries.append((char,chars[alias]))
+    entries.append([char,chars[alias]])
     chars[char] = chars[alias]
 
 print(f"Dictionary entries: {len(entries)}")
@@ -86,9 +89,9 @@ for entry in entries:
 
 print(f"Eliminated entries: {redundant}")
 print(f"Final entries: {len(reduced)}")
-with open(sys.argv[1],'w') as f:
-    for entry in reduced:
-        for z in entry[1].split('\u3000'):
-            zhuyin_parse(z)
 
-        f.write("{0},{1}\n".format(entry[0],entry[1].replace(separator,'')))
+for entry in reduced:
+    entry[1] = [zhuyin_parse(z) for z in entry[1].split('\u3000')]
+
+with open(sys.argv[1],'wb') as f:
+    write(f,reduced)
