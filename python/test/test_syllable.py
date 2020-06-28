@@ -3,6 +3,7 @@ from hanzi2reading.syllable import Syllable
 import hanzi2reading.zhuyin as zhuyin
 import hanzi2reading.pinyin as pinyin
 
+
 class TestSyllable(unittest.TestCase):
     def test_first_tone(self):
         s = zhuyin.parse('ㄎㄧㄤ')
@@ -12,15 +13,6 @@ class TestSyllable(unittest.TestCase):
         self.assertEqual(s.tone,1)
         self.assertFalse(s.er)
         self.assertEqual(zhuyin.get(s),'ㄎㄧㄤ')
-
-    def test_second_tone(self):
-        pass
-
-    def test_third_tone(self):
-        pass
-
-    def test_fourth_tone(self):
-        pass
 
     def test_er_before(self):
         pass
@@ -43,10 +35,10 @@ class TestSyllable(unittest.TestCase):
         self.assertEqual(b,b'\xb2\x29') # 0b 1011 0010 0010 1001 
         self.assertEqual(zhuyin.get(Syllable.from_bytes(b)),'ㄎㄧㄤ')
 
+
     def test_pinyin(self):
         def zp(z,p):
             self.assertEqual(pinyin.get(zhuyin.parse(z)),p)
-
         zp('ㄧ','yī')
         zp('ㄧㄡ','yōu')
         zp('ㄧㄣ','yīn')
@@ -54,7 +46,6 @@ class TestSyllable(unittest.TestCase):
         zp('ㄨ','wū')
         zp('ㄨㄟ','wēi')
         zp('ㄨㄣ','wēn')
-
         zp('ㄋㄩ','nǖ')
         zp('ㄐㄩ','jū')
         zp('ㄐㄩㄝ','juē')
@@ -71,12 +62,17 @@ class TestSyllable(unittest.TestCase):
         zp('˙ㄉㄨㄟ','dui')
 
         zp('ㄉㄨㄣ','dūn')
-
-        zp('ㄎㄧㄤ','kiāng')
-        zp('ㄉㄨㄤ','duāng')
-
         zp('ㄒㄧㄥˊ','xíng')
         zp('ㄒㄩㄥˊ','xióng')
-
         zp('ㄠ','āo')
+        zp('ㄙˇ','sǐ')
+        zp('ㄦ','ēr')
+        zp('ㄧㄞˊ','yái')
+
+    def test_nonstandard_pinyin(self):
+        def zp(z,p):
+            self.assertEqual(pinyin.get(zhuyin.parse(z)),p)
+        zp('ㄎㄧㄤ','kiāng')
+        zp('ㄉㄨㄤ','duāng')
+        zp('ㄧㄛ','yō')
 

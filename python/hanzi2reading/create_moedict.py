@@ -36,26 +36,29 @@ with open('../moedict-data/dict-revised.json','r') as f:
         continue
     heteronym_1 = entries_with_bpmf[0]
 
-    pron = heteronym_1[key]
-    if "（" in pron:
-        pre = re.match("（(語|讀)音）(.+)",pron)
-        if pre:
-            pron = pre.group(2)
-        else:
-            start = pron.index("（")
-            pron = pron[0:start-1]
-    if "(" in pron:
-        start = pron.index("(")
-        pron = pron[0:start-1]
+    bpmf = heteronym_1[key]
+    def cleanup(pron):
+        if "（" in pron:
+            pre = re.match("（(語|讀)音）(.+)",pron)
+            if pre:
+                pron = pre.group(2)
+            else:
+                start = pron.index("（")
+                pron = pron[0:start]
+        if "(" in pron:
+            start = pron.index("(")
+            pron = pron[0:start]
+        return pron
 
+    bpmf = cleanup(bpmf)
     # replace double space with \u3000
-    pron = pron.replace('  ','\u3000')
+    bpmf = bpmf.replace('  ','\u3000')
     # replace extra spaces
-    pron = pron.replace(' ','')
+    bpmf = bpmf.replace(' ','').strip()
 
-    entries.append([title, pron])
+    entries.append([title, bpmf])
     if len(title) == 1:
-        chars[title] = pron
+        chars[title] = bpmf
 
 for char, alias in aliases.items():
     entries.append([char,chars[alias]])

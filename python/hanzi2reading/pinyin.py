@@ -8,7 +8,7 @@ MEDIALS_FINALS = [
 ]
 NO_INITIAL = [
     [  '', 'a', 'o','e',  'ê', 'ai', 'ei', 'ao',' ou',  'an', 'en', 'ang', 'eng'],
-    ['yi','ya',  '', '', 'ye',   '',   '','yao','you', 'yan','yin','yang','ying'],
+    ['yi','ya','yo', '', 'ye','yai',   '','yao','you', 'yan','yin','yang','ying'],
     ['wu','wa','wo', '',   '','wai','wei',   '',   '', 'wan','wen','wang','weng'],
     ['yu', '',   '', '','yue',   '',   '',   '',   '','yuan','yun',    '','yong']
 ]
@@ -27,8 +27,16 @@ def get(s):
             p += 'uan'
         elif s.initial in [12,13,14] and s.medial == 3 and s.final == 10:
             p += 'un'
+        elif s.initial in [15,16,17,18,19,20,21] and s.medial == 0 and s.final == 0:
+            p += 'i'
         else:
             p += MEDIALS_FINALS[s.medial][s.final]
+
+    if s.er:
+        if s.initial == 0 and s.medial == 0 and s.final == 0:
+            p += 'er'
+        else:
+            p += 'r'
 
     if s.tone <= 4:
         if 'a' in p:
@@ -47,7 +55,5 @@ def get(s):
             p = p.replace('u','ūúǔù'[s.tone - 1])
         elif 'ü' in p:
             p = p.replace('ü','ǖǘǚǜ'[s.tone - 1])
-
-    # TODO er
 
     return p
