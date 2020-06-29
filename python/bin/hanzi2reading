@@ -5,6 +5,14 @@ from hanzi2reading.reading import Reading
 import hanzi2reading.zhuyin as zhuyin
 import hanzi2reading.pinyin as pinyin
 
+if sys.argv[1].endswith('.h2r'):
+    from hanzi2reading.serialize import read
+
+    with open(sys.argv[1],'rb') as f:
+        for headword, syllables in read(f):
+            print(headword,''.join(pinyin.get(s) for s in syllables))
+    exit(0)
+
 reading = Reading()
 result = reading.get(sys.argv[1])
 z = [zhuyin.get(s) for s in result]
