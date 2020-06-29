@@ -25,6 +25,11 @@ function pinyin(s) {
         else p += PY_MEDIALS_FINALS[s[1]][s[2]]
     }
 
+    if (s[4]) {
+        if (s[0] == 0 && s[1] == 0 && s[2] == 0) p += 'er'
+        else p += 'r'
+    }
+
     if (s[3] <= 4) {
         if (p.includes('a')) p = p.replace('a','āáǎà'[s[3] - 1])
         else if (p.includes('e')) p = p.replace('e','ēéěè'[s[3] - 1])
@@ -34,7 +39,25 @@ function pinyin(s) {
         else if (p.includes('u')) p = p.replace('u','ūúǔù'[s[3] - 1])
         else if (p.includes('ü')) p = p.replace('ü','ǖǘǚǜ'[s[3] - 1])
     }
+
     return p
+}
+
+ZY_INITIALS = 'ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ'
+ZY_MEDIALS = 'ㄧㄨㄩ'
+ZY_FINALS = 'ㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥ'
+ZY_TONES = 'ˊˇˋ˙'
+
+function zhuyin(s) {
+    var z = ''
+    if (s[3] == 5) z += '˙'
+    if (s[0] > 0) z += ZY_INITIALS[s[0]-1]
+    if (s[1] > 0) z += ZY_MEDIALS[s[1]-1]
+    if (s[2] > 0) z += ZY_FINALS[s[2]-1]
+    if (s[0] == 0 && s[1] == 0 && s[2] == 0 && s[4]) z += 'ㄦ'
+    if (s[3] >= 2 && s[3] <= 4) z += ZY_TONES[s[3]-2]
+    if (!(s[0] == 0 && s[1] == 0 && s[2] == 0) && s[4]) z += 'ㄦ'
+    return z
 }
 
 fetch('./moedict.h2r').then(response => {
@@ -60,7 +83,6 @@ fetch('./moedict.h2r').then(response => {
                 ])
                 i+= 2
             }
-            if (i > 10000) return
         }
     })
 })
