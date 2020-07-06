@@ -22,7 +22,7 @@
     ]
 
     function pinyin(s) {
-        p = ''
+        var p = ''
         if (s[0] == 0) p += PY_NO_INITIAL[s[1]][s[2]]
         else {
             p += PY_INITIALS[s[0]-1]

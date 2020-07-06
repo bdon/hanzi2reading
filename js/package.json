@@ -1,6 +1,6 @@
 {
   "name": "hanzi2reading",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert chinese characters to pinyin, etc using dictionary.",
   "main": "hanzi2reading.js",
   "repository": {
