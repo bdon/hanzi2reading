@@ -87,6 +87,8 @@ for entry in entries:
         parts = entry[1].split(separator)
         if [chars[c] for c in entry[0]] == parts: # 櫈
             redundant = redundant + 1
+        elif len(parts) != len(entry[0]):
+            pass # it has "er" or is misformatted (i think 2 total)
         else:
             reduced.append(entry)
 
