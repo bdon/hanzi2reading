@@ -1,6 +1,6 @@
 import sys
-from pinyin import get
-from pinyin_number import parse
+from hanzi2reading.pinyin import get
+from hanzi2reading.pinyin_number import parse
 from hanzi2reading.serialize import write
 import re
 

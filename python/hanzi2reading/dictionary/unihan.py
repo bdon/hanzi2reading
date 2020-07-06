@@ -1,5 +1,5 @@
 import sys
-from pinyin import parse
+from hanzi2reading.pinyin import parse
 from hanzi2reading.serialize import write
 
 entries = []

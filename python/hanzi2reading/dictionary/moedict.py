@@ -5,7 +5,7 @@
 import json
 import re
 import sys
-from zhuyin import parse as zhuyin_parse
+from hanzi2reading.zhuyin import parse as zhuyin_parse
 from hanzi2reading.serialize import write
 
 # remove all non-BMP characters
