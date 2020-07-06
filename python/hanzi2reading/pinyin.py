@@ -81,6 +81,8 @@ def parse(p):
         initial, medial, final = EXCEPTIONS[base]
     elif base in LOOKUP:
         initial, medial, final = LOOKUP[base]
+    else:
+        raise Exception("Invalid pinyin",p)
 
     return Syllable(initial,medial,final,tone,er)
 
