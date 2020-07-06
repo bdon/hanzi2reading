@@ -1,0 +1,18 @@
+{
+  "name": "hanzi2reading",
+  "version": "0.0.1",
+  "description": "Convert chinese characters to pinyin, etc using dictionary.",
+  "main": "hanzi2reading.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdon/hanzi2reading.git"
+  },
+  "homepage": "https://github.com/bdon/hanzi2reading",
+  "keywords": [
+    "chinese",
+    "zhuyin",
+    "pinyin"
+  ],
+  "author": "Brandon Liu",
+  "license": "BSD-2-Clause"
+}
