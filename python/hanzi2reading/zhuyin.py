@@ -1,5 +1,5 @@
 import re
-from hanzi2reading.syllable import Syllable
+from hanzi2reading import Syllable
 
 INITIALS = 'ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ'
 MEDIALS = 'ㄧㄨㄩ'

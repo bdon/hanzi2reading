@@ -1,5 +1,5 @@
 import unittest
-from hanzi2reading.syllable import Syllable
+from hanzi2reading import Syllable
 import hanzi2reading.zhuyin as zhuyin
 import hanzi2reading.pinyin as pinyin
 import hanzi2reading.pinyin_number as pinyin_number
@@ -29,13 +29,6 @@ class TestSyllable(unittest.TestCase):
         self.assertEqual(s.tone,5)
         self.assertFalse(s.er)
         self.assertEqual(zhuyin.get(s),'˙ㄇㄚ')
-
-    def test_to_bytes(self):
-        b = zhuyin.parse('ㄎㄧㄤ').to_bytes()
-        self.assertEqual(len(b),2)
-        self.assertEqual(b,b'\xb2\x29') # 0b 1011 0010 0010 1001 
-        self.assertEqual(zhuyin.get(Syllable.from_bytes(b)),'ㄎㄧㄤ')
-
 
     def test_pinyin(self):
         def zp(z,p):

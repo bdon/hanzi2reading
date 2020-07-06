@@ -1,4 +1,4 @@
-from hanzi2reading.syllable import Syllable
+from hanzi2reading import Syllable
 
 INITIALS = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','sh','r','z','c','s']
 # https://en.wikipedia.org/wiki/Zhuyin_table

@@ -1,5 +1,5 @@
+from hanzi2reading import Syllable
 import hanzi2reading.pinyin as pinyin
-from hanzi2reading.syllable import Syllable
 
 class Invalid(Exception):
     pass
