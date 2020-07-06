@@ -3,3 +3,5 @@ moedict-data
 dist
 __pycache__
 *.egg-info
+Unihan
+cedict_ts.u8
