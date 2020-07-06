@@ -1,11 +1,11 @@
-PY_INITIALS = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','sh','r','z','c','s']
-PY_MEDIALS_FINALS = [
+const PY_INITIALS = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','sh','r','z','c','s']
+const PY_MEDIALS_FINALS = [
     ['','a','o','e','ê','ai','ei','ao','ou','an','en','ang','eng'],
     ['i','ia','io','e','ie','iai','','iao','iu','ian','in','iang','ing'],
     ['u','ua','uo','','','uai','ui','','','uan','un','uang','ong'],
     ['ü','','','','üe','','','','','üan','ün','','iong']
 ]
-PY_NO_INITIAL = [
+const PY_NO_INITIAL = [
     [  '', 'a', 'o','e',  'ê', 'ai', 'ei', 'ao',' ou',  'an', 'en', 'ang', 'eng'],
     ['yi','ya','yo', '', 'ye','yai',   '','yao','you', 'yan','yin','yang','ying'],
     ['wu','wa','wo', '',   '','wai','wei',   '',   '', 'wan','wen','wang','weng'],
@@ -33,9 +33,10 @@ function pinyin(s) {
     if (s[3] <= 4) {
         if (p.includes('a')) p = p.replace('a','āáǎà'[s[3] - 1])
         else if (p.includes('e')) p = p.replace('e','ēéěè'[s[3] - 1])
-        else if (p.includes('u')) p = p.replace('u','ūúǔù'[s[3] - 1])
+        else if (p.includes('o')) p = p.replace('o','ōóǒò'[s[3] - 1])
         else if (p.includes('iu')) p = p.replace('u','ūúǔù'[s[3] - 1])
         else if (p.includes('ui')) p = p.replace('i','īíǐì'[s[3] - 1])
+        else if (p.includes('i')) p = p.replace('i','īíǐì'[s[3] - 1])
         else if (p.includes('u')) p = p.replace('u','ūúǔù'[s[3] - 1])
         else if (p.includes('ü')) p = p.replace('ü','ǖǘǚǜ'[s[3] - 1])
     }
@@ -43,10 +44,10 @@ function pinyin(s) {
     return p
 }
 
-ZY_INITIALS = 'ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ'
-ZY_MEDIALS = 'ㄧㄨㄩ'
-ZY_FINALS = 'ㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥ'
-ZY_TONES = 'ˊˇˋ˙'
+const ZY_INITIALS = 'ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ'
+const ZY_MEDIALS = 'ㄧㄨㄩ'
+const ZY_FINALS = 'ㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥ'
+const ZY_TONES = 'ˊˇˋ˙'
 
 function zhuyin(s) {
     var z = ''
@@ -60,17 +61,95 @@ function zhuyin(s) {
     return z
 }
 
+class Trie {
+  constructor() {
+    this._trie = [null,{}]
+  }
+
+  add(headword,syllables) {
+    var node = this._trie
+    for (var i = 0; i < headword.length; i++) {
+        if (!(headword[i] in node[1])) {
+            node[1][headword[i]] = [null,{}]
+        }
+        node = node[1][headword[i]]
+        if (i == headword.length - 1) node[0] = syllables
+    }
+  }
+
+  get(str) {
+    var reading = [] 
+    var i = 0
+    while (i < str.length) {
+        var j = i
+        var node = this._trie
+        var candidate = []
+        var candidate_depth = 0
+        var depth = 0
+        if (!(str[j] in node[1])) {
+            i++
+            continue
+        }
+        while (j < str.length && (str[j] in node[1])) {
+            node = node[1][str[j]]
+            depth = depth + 1
+            if (node[0]) {
+                candidate_depth = depth
+                candidate = node[0]
+            }
+            j = j + 1
+        }
+        reading = reading.concat(candidate)
+        i = i + candidate_depth
+    }
+    return reading
+  }
+
+  annotate(str) {
+    var reading = [] 
+    var i = 0
+    while (i < str.length) {
+        var j = i
+        var node = this._trie
+        var candidate = []
+        var candidate_depth = 0
+        var depth = 0
+        if (!(str[j] in node[1])) {
+            reading.push([str[i],null])
+            i++
+            continue
+        }
+        while (j < str.length && (str[j] in node[1])) {
+            node = node[1][str[j]]
+            depth = depth + 1
+            if (node[0]) {
+                candidate_depth = depth
+                candidate = node[0]
+            }
+            j = j + 1
+        }
+        for (var u = 0; u < candidate_depth; u++) {
+            reading.push([str[i+u],candidate[u]])
+        }
+        i = i + candidate_depth
+    }
+    return reading
+  }
+}
+
+const reading = new Trie()
+
 fetch('./moedict.h2r').then(response => {
     response.arrayBuffer().then(buffer => {
         const decoder = new TextDecoder("utf-8")
         const view = new Uint8Array(buffer)
         var i = 0
         while (i < view.length) {
-            num_headword_bytes = view[i++]
-            num_syllables = view[i++]
+            var num_headword_bytes = view[i++]
+            var num_syllables = view[i++]
             var headword = decoder.decode(view.subarray(i,i+num_headword_bytes))
             i+= num_headword_bytes
-            syllables = []
+            var syllables = []
             for (var j = 0; j < num_syllables; j++) {
                 var b1 = view[i]
                 var b2 = view[i+1]
@@ -83,6 +162,7 @@ fetch('./moedict.h2r').then(response => {
                 ])
                 i+= 2
             }
+            reading.add(headword,syllables)
         }
     })
 })
