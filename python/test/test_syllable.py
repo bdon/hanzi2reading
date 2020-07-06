@@ -2,6 +2,7 @@ import unittest
 from hanzi2reading.syllable import Syllable
 import hanzi2reading.zhuyin as zhuyin
 import hanzi2reading.pinyin as pinyin
+import hanzi2reading.pinyin_number as pinyin_number
 
 
 class TestSyllable(unittest.TestCase):
@@ -70,6 +71,7 @@ class TestSyllable(unittest.TestCase):
         zp('ㄦ','ēr')
         zp('ㄧㄞˊ','yái')
         zp('ㄈㄢˋㄦ','fànr')
+        zp('ㄩㄥ','yōng')
 
     def test_nonstandard_pinyin(self):
         def zp(z,p):
@@ -78,3 +80,10 @@ class TestSyllable(unittest.TestCase):
         zp('ㄉㄨㄤ','duāng')
         zp('ㄧㄛ','yō')
 
+    def test_propernoun_pinyin(self):
+        # whether or not the syllable is capitalized is not stored yet.
+        self.assertEqual(zhuyin.get(pinyin.parse('Yī')),'ㄧ')
+
+    def test_pinyin_number(self):
+        self.assertEqual(zhuyin.get(pinyin_number.parse('yi1')),'ㄧ')
+        self.assertEqual(zhuyin.get(pinyin_number.parse('Yi1')),'ㄧ')

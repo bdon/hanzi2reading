@@ -24,6 +24,9 @@ TONE_CHARS = [
     ['ǖǘǚǜ','ü']
 ]
 
+class Invalid(Exception):
+    pass
+
 # construct a lookup table from toneless pinyin to (INITIAL, MEDIAL, FINAL)
 
 LOOKUP = {}
@@ -60,32 +63,35 @@ EXCEPTIONS = {
     'si':(21,0,0)
 }
 
-def parse(p):
-    def find_tone(s):
-        for vowel in TONE_CHARS:
-            for idx, char in enumerate(vowel[0]):
-                if char in s:
-                    return s.replace(char,vowel[1]), idx+1
-        return s, 5
+def find_tone(s):
+    for vowel in TONE_CHARS:
+        for idx, char in enumerate(vowel[0]):
+            if char in s:
+                return s.replace(char,vowel[1]), idx+1
+    return s, 5
 
-    base, tone = find_tone(p)
-
+def find_base(base):
     if base == 'er':
-        return Syllable(0,0,0,tone,1)
+        return (0,0,0,1)
     er = 0
     if base.endswith('r'):
         base = base[0:-1]
         er = 1
 
     if base in EXCEPTIONS:
-        initial, medial, final = EXCEPTIONS[base]
+        return list(EXCEPTIONS[base]) + [er]
     elif base in LOOKUP:
-        initial, medial, final = LOOKUP[base]
+        return list(LOOKUP[base]) + [er]
     else:
-        raise Exception("Invalid pinyin",p)
+        raise Invalid("Invalid pinyin",base)
 
+def parse(p):
+    if p[0].isupper():
+        p = p.lower()
+
+    base, tone = find_tone(p)
+    initial, medial, final, er = find_base(base)
     return Syllable(initial,medial,final,tone,er)
-
 
 def get(s,tones=True):
     p = ''
