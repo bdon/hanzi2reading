@@ -67,7 +67,7 @@ for char, alias in aliases.items():
 print(f"Dictionary entries: {len(entries)}")
 print(f"Single chars: {len(chars)}")
 
-# find any 2-grams or greater where the 1-gram is missing
+# find any 2-grams or greater where the 1-gram is missing (TODO: does this need an entry?)
 # example: 湳
 for entry in entries:
     parts = entry[1].split(separator)
