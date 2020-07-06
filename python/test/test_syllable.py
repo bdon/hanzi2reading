@@ -39,6 +39,7 @@ class TestSyllable(unittest.TestCase):
     def test_pinyin(self):
         def zp(z,p):
             self.assertEqual(pinyin.get(zhuyin.parse(z)),p)
+            self.assertEqual(zhuyin.get(pinyin.parse(p)),z)
         zp('ㄧ','yī')
         zp('ㄧㄡ','yōu')
         zp('ㄧㄣ','yīn')
@@ -68,6 +69,7 @@ class TestSyllable(unittest.TestCase):
         zp('ㄙˇ','sǐ')
         zp('ㄦ','ēr')
         zp('ㄧㄞˊ','yái')
+        zp('ㄈㄢˋㄦ','fànr')
 
     def test_nonstandard_pinyin(self):
         def zp(z,p):
