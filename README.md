@@ -1,24 +1,33 @@
 # hanzi2reading
 
-## 
+A library for transcribing strings of Chinese characters to their readings in Mandarin.
 
-This library is distributed with a default database; you can find the license information here. https://github.com/g0v/moedict-data/blob/master/README.md
+An example JavaScript application: http://bdon.org/hanzireader/
 
-## Design goals
-* Annotation of Chinese characters with Standard Mandarin (國語/普通話) readings
-* Agnostic to simplified/traditional script and transliteration method
-* Should work offline, and database format should be as compact as possible - e.g. Protocol Buffers loaded by WebAssembly
-* Should support word-based disambiguation of characters with multiple readings
-* separation of code and data - dictionary backend should be swappable
+* Disambiguates multiple-reading characters based on a dictionary.
+* Defines a binary format for dictionaries that can be loaded at runtime.
+  * The dictionary format is designed to be as compact as possible.
+  * Dictonaries are agnostic to Traditional/Simplified script and transliteration format, and store pronunciations as [2-byte syllable sequences](#syllable-format) based on Zhuyin.
+  * A typical dictionary CC-CEDICT in this format is around 700 kB, or less than 300 kB Brotli-compressed, meaning it is practical to load the entire dictionary once over the web and then perform transcription without any network communication.
+* The library and dictionary can be shared across multiple programming languages. Python and JavaScript are supported right now.
+
+## Installation
+
+Javascript: `npm install hanzi2reading`
+Python: `pip install hanzi2reading`
+
+## Dictionaries
+
+* CC-CEDICT. Licensed CC-BY-SA.
+* Moedict. Licensed CC-BY-ND. https://github.com/g0v/moedict-data/blob/master/README.md
+* Unihan database, which contains 1-grams only. Licensed under Unicode License.
 
 ## Limitations
-* Word segmentation is a non-goal.
-* Target should be good performance for non-sentence inputs, without needing part-of-speech classification, e.g. 得
 
-## Database Format
+* This library only does dictionary-based lookups of character sequences. It does not attempt to disambiguate readings based on parts of speech, which is necessary for transcribing complete sentences. 
+* Word segmentation and proper nouns for formatted Pinyin is not supported, but may be in the future.
 
-* https://en.wikipedia.org/wiki/Zhuyin_table
-* https://en.wikipedia.org/wiki/Pinyin_table
+## Syllable Format
 
 Part | Bits
 --- | ---
@@ -26,10 +35,9 @@ Initial | 5
 Medial | 2
 Final | 4
 Tone | 3
-Erhua | 1
+Er | 1
 
-Total = 15 bits per syllable. This is less compact than enumerating all standard syllables, but allows dictionaries to have non-standard syllables.
-
+A syllable is serialized in a dictionary as a 2-byte sequence (little-endian). When loaded into a programming runtime, a syllable is a tuple or array of five integers. Example: the syllable kiāng ㄎㄧㄤ corresponds to the array [10,1,11,1,0] or the byte sequence `0b 1011 0010 0010 1001`
 
 ## Notes
 * https://www.unicode.org/reports/tr38/#N1019C
