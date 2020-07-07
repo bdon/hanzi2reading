@@ -37,6 +37,8 @@ Final | 4
 Tone | 3
 Er | 1
 
+A syllable is serialized in a dictionary as a 2-byte sequence (little-endian). When loaded into a programming runtime, a syllable is a tuple or array of five integers. Example: the syllable kiāng ㄎㄧㄤ corresponds to the array [10,1,11,1,0] or the byte sequence `0b 1011 0010 0010 1001`
+
 ## Notes
 * https://www.unicode.org/reports/tr38/#N1019C
 * https://languagelog.ldc.upenn.edu/nll/?p=45843
