@@ -1,64 +1,44 @@
 import sys
 from hanzi2reading.pinyin import get
-from hanzi2reading.pinyin_number import parse
+from hanzi2reading.pinyin_number import parse as parse_pinyin_number
 from hanzi2reading.serialize import write
+from hanzi2reading.dictionary import BMP_HANZI, fill_unigrams, remove_redundant
 import re
 
-entries = []
-
-HANZI = re.compile(u'^[⺀-⺙⺛-⻳⼀-⿕々〇〡-〩〸-〺〻㐀-䶵一-鿃豈-鶴侮-頻並-龎]+$', re.UNICODE)
 RE = re.compile(u'^(.+?) (.+?) \\[(.+?)\\]', re.UNICODE)
 
-unigrams = {}
+# returns a list of (headword, [syllable]) entries
+def parse(fname):
+    entries = []
+    seen = set()
+    with open(fname) as f:
+        for l in f.readlines():
+            match = RE.match(l)
+            if match:
+                traditional = match.group(1)
+                simplified = match.group(2)
+                if len(traditional) > 8:
+                    continue
+                if not BMP_HANZI.match(traditional):
+                    continue
+                pinyin = match.group(3).replace('u:','ü')
+                try:
+                    syllables = [parse_pinyin_number(s) for s in pinyin.split(' ')]
+                    if traditional not in seen:
+                        entries.append((traditional,syllables))
+                        seen.add(traditional)
+                    if simplified not in seen:
+                        entries.append((simplified,syllables))
+                        seen.add(simplified)
+                except Exception as e:
+                    pass
+    return entries
 
-with open(sys.argv[1],'r') as f:
-    for l in f.readlines():
-        match = RE.match(l)
-        if match:
-            traditional = match.group(1)
-            simplified = match.group(2)
-            if len(traditional) > 8:
-                continue
-            if not HANZI.match(traditional):
-                continue
-            pinyin = match.group(3).replace('u:','ü')
-            try:
-                syllables = [parse(s) for s in pinyin.split(' ')]
-                if len(traditional) == 1:
-                    if traditional[0] in unigrams:
-                        continue
-                    unigrams[traditional[0]] = syllables[0]
-                entries.append((traditional,syllables))
-                if traditional != simplified:
-                    entries.append((simplified,syllables))
-
-            except Exception as e:
-                pass
-
-
-# infill any 1-grams that only appear in a 2-gram or mode
-# TODO does this need a new entry?
-for entry in entries:
-    if len(entry[0]) > 1:
-        for idx, char in enumerate(entry[0]):
-            if char not in unigrams:
-                unigrams[char] = entry[1][idx]
-
-print("Entries:", len(entries))
-print("Num unigrams:", len(unigrams))
-
-redundant = 0
-reduced = []
-for entry in entries:
-    if len(entry[0]) == 1:
-        reduced.append(entry)
-    else:
-        if [unigrams[c] for c in entry[0]] == entry[1]:
-            redundant = redundant + 1
-        else:
-            reduced.append(entry)
-
-print("Redundant:", redundant)
-print("Total:",len(reduced))
-with open(sys.argv[2],'wb') as f:
-    write(f,reduced)
+if __name__ == "__main__":
+    entries = parse(sys.argv[1])
+    print("Entries: ",len(entries))
+    entries = fill_unigrams(entries)
+    entries = remove_redundant(entries)
+    print("Total:",len(entries))
+    with open(sys.argv[2],'wb') as f:
+        write(f,entries)
