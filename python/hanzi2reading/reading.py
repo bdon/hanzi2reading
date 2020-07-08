@@ -1,5 +1,6 @@
 import os
 import sys
+from enum import Enum
 from hanzi2reading.serialize import read
 
 class TrieNode:
@@ -45,12 +46,22 @@ class Trie:
 
         return reading
 
+class Builtin(Enum):
+    CEDICT = 1
+    MOEDICT = 2
+    UNIHAN = 3
+
 class Reading:
     def __init__(self,fname=None):
         self._trie = Trie()
 
-        if not fname:
+        if fname == Builtin.CEDICT:
+            fname = os.path.join(os.path.dirname(__file__), 'data/cedict.h2r')
+        elif fname == Builtin.MOEDICT or not fname:
             fname = os.path.join(os.path.dirname(__file__), 'data/moedict.h2r')
+        elif fname == Builtin.UNIHAN:
+            fname = os.path.join(os.path.dirname(__file__), 'data/unihan.h2r')
+
 
         with open(fname,'rb') as f:
             for headword, syllables in read(f):
