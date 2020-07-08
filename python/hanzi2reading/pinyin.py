@@ -4,7 +4,7 @@ INITIALS = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','s
 # https://en.wikipedia.org/wiki/Zhuyin_table
 MEDIALS_FINALS = [
     ['','a','o','e','ê','ai','ei','ao','ou','an','en','ang','eng'],
-    ['i','ia','io','e','ie','iai','','iao','iu','ian','in','iang','ing'],
+    ['i','ia','io','','ie','iai','','iao','iu','ian','in','iang','ing'],
     ['u','ua','uo','','','uai','ui','','','uan','un','uang','ong'],
     ['ü','','','','üe','','','','','üan','ün','','iong']
 ]

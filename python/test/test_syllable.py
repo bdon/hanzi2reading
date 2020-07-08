@@ -65,6 +65,7 @@ class TestSyllable(unittest.TestCase):
         zp('ㄧㄞˊ','yái')
         zp('ㄈㄢˋㄦ','fànr')
         zp('ㄩㄥ','yōng')
+        zp('ㄏㄜˊ','hé')
 
     def test_nonstandard_pinyin(self):
         def zp(z,p):
