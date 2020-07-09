@@ -33,13 +33,17 @@ def remove_redundant(entries):
     redundant = 0
     reduced = []
     for entry in entries:
-        if len(entry[0]) == 1:
-            reduced.append(entry)
-        else:
-            if [unigrams[c] for c in entry[0]] == entry[1]:
-                redundant = redundant + 1
-            else:
+        try:
+            if len(entry[0]) == 1:
                 reduced.append(entry)
+            else:
+                if [unigrams[c] for c in entry[0]] == entry[1]:
+                    redundant = redundant + 1
+                else:
+                    reduced.append(entry)
+        except Exception:
+            print("Failed: ",entry[0])
+
 
     print("Redundant: ",len(entries) - len(reduced))
     return reduced
