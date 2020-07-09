@@ -30,6 +30,8 @@ elif args.builtin == 'moedict':
     builtin = Builtin.MOEDICT
 elif args.builtin == 'unihan':
     builtin = Builtin.UNIHAN
+elif args.builtin == 'unihan-cedict':
+    builtin = Builtin.UNIHAN_CEDICT
 
 reading = Reading(builtin)
 result = reading.get(sys.argv[1])

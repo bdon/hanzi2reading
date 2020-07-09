@@ -61,6 +61,8 @@ class Reading:
             fname = os.path.join(os.path.dirname(__file__), 'data/moedict.h2r')
         elif fname == Builtin.UNIHAN:
             fname = os.path.join(os.path.dirname(__file__), 'data/unihan.h2r')
+        elif fname == Builtin.UNIHAN_CEDICT:
+            fname = os.path.join(os.path.dirname(__file__), 'data/unihan-cedict.h2r')
 
 
         with open(fname,'rb') as f:
