@@ -1,5 +1,5 @@
 from hanzi2reading import Syllable
-import hanzi2reading.pinyin as pinyin
+import hanzi2reading.hanyu_pinyin as hanyu_pinyin
 
 class Invalid(Exception):
     pass
@@ -22,5 +22,5 @@ def parse(p):
         p = p.lower()
 
     base, tone = find_tone(p)
-    initial, medial, final, er = pinyin.find_base(base)
+    initial, medial, final, er = hanyu_pinyin.find_base(base)
     return Syllable(initial,medial,final,tone,er)
